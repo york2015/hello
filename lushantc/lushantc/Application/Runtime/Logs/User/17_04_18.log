@@ -1,0 +1,1002 @@
+[ 2017-04-18T11:51:10+08:00 ] 127.0.0.1 /user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 19 Ë°å.
+ERR: SQLSTATE[HY000] [2002] ”…”⁄¡¨Ω”∑Ω‘⁄“ª∂Œ ±º‰∫Û√ª”–’˝»∑¥∏¥ªÚ¡¨Ω”µƒ÷˜ª˙√ª”–∑¥”¶£¨¡¨Ω”≥¢ ‘ ß∞‹°£
+
+
+[ 2017-04-18T11:55:30+08:00 ] 127.0.0.1 /user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 19 Ë°å.
+ERR: SQLSTATE[HY000] [1130] Le hÙte 'acr1-PC' n'est pas authorisÈ ‡ se connecter ‡ ce serveur MySQL
+
+[ 2017-04-18T13:39:46+08:00 ] 127.0.0.1 /lushantc/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 19 Ë°å.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0880s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `order` WHERE `uid` = null AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 32 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 33 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 34 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 35 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: c D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 41 Ë°å.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:25+08:00 ] 127.0.0.1 /lushantc/user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.2230s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-18T13:40:30+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 2,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917391207133'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917475343106'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:30+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_user_cart_count
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.1100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:30+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_lgoin_str
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:31+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 4,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14919753453559'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14919798863658'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:31+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_user_cart_count
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:31+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_lgoin_str
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-18T13:40:40+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_user_cart_count
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:40+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_lgoin_str
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-18T13:40:43+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_user_cart_count
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:43+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_lgoin_str
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:46+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_user_cart_count
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:46+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_lgoin_str
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:53+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_user_cart_count
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:53+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_lgoin_str
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:58+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_user_cart_count
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:40:58+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_lgoin_str
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-18T13:41:01+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/refund.aspx
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-18T13:41:01+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_user_cart_count
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-18T13:41:01+08:00 ] 127.0.0.1 /lushantc/User/Index/index/p/handler/common_ajax.aspx?action=get_lgoin_str
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:42:56+08:00 ] 127.0.0.1 /user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:43:00+08:00 ] 127.0.0.1 /user?statusid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14919753453559'  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-18T13:43:01+08:00 ] 127.0.0.1 /user?statusid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:43:02+08:00 ] 127.0.0.1 /user?statusid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: c D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 41 Ë°å.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:43:03+08:00 ] 127.0.0.1 /user?statusid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-18T13:43:03+08:00 ] 127.0.0.1 /user?statusid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14919753453559'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T13:43:04+08:00 ] 127.0.0.1 /user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-18T13:43:07+08:00 ] 127.0.0.1 /user/index/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `user_address` [ RunTime:0.1120s ]
+SQL: SELECT * FROM `user_address` WHERE `uid` = 42  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `provinces` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `provinces` WHERE `provinceid` = '440000' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `cities` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cities` WHERE `cityid` = '440300' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `areas` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `areas` WHERE `areaid` = '440306' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2017-04-18T13:43:08+08:00 ] 127.0.0.1 /user/index/handler/common_ajax.aspx?action=get_user_cart_count
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: ÈùûÊ≥ïÊìç‰Ωú:handler
+
+[ 2017-04-18T13:43:08+08:00 ] 127.0.0.1 /user/index/handler/common_ajax.aspx?action=get_lgoin_str
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: ÈùûÊ≥ïÊìç‰Ωú:handler
+
+[ 2017-04-18T14:32:53+08:00 ] 127.0.0.1 /user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 19 Ë°å.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = null AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 32 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 33 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 34 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 35 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: c D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 41 Ë°å.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T14:33:05+08:00 ] 127.0.0.1 /user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = 42 AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `order_detail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299176512'  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order_detail` WHERE `order_sn` = '14917299403145'  [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = 42 AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-18T21:28:38+08:00 ] 127.0.0.1 /user
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 19 Ë°å.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `order` WHERE `uid` = null AND `delete` = 0 ORDER BY create_time LIMIT 0,2   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 32 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 33 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 34 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 AND `status` = 3 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 35 Ë°å.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE `uid` = null AND `delete` = 0 AND `status` = 4 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: c D:\wamp\www\lushantc\Application\User\Controller\IndexController.class.php Á¨¨ 41 Ë°å.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

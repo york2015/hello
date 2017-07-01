@@ -1,0 +1,14 @@
+[ 2017-05-04T08:11:50+08:00 ] 127.0.0.1 /home/areas/getarea?city_id=130100
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `areas` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `areas` WHERE `cityid` = '130100'  [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

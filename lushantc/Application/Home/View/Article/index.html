@@ -1,0 +1,584 @@
+<include file="Public/header"/>
+<!--头部结束-->
+<script type="text/javascript" src="__ROOT__/Public/js/Home/seed-min.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/lhgdialog/lhgdialog.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/cart.js"></script>
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/css/Home/cart.css"/>
+<!--购物车开始-->
+<div class="wrap wpos clear">
+        <div class="location clear">您所在的位置：<a href="/">土购网</a><em>&gt;</em><a href="/news.aspx">新闻资讯</a><em>&gt;</em><a href="#">本站动态</a></div>
+        <!-- <div class="newstab">
+            <em><a class="" href="/news.aspx">全部信息</a></em>
+            <em><a class="" href="/news.aspx?cid=592">养生保健</a></em>
+            <em><a class="" href="/news.aspx?cid=593">价格走势</a></em>
+            <em><a class="aon" href="/news.aspx?cid=590">行业新闻</a></em>
+            <em><a class="" href="/news.aspx?cid=591">本站动态</a></em>
+            <em><a href="/health.aspx">营养课堂</a></em>
+        </div> -->
+        <div class="newslslf left">
+            <div class="newsdtc clear">
+                <div class="newstit">
+                    <h2>{$article.title}</h2>
+                    <p>时间：2017年03月16日 </p>
+                </div>
+                <!-- <div class="takeaway">
+                    <em class="ems">导读</em>
+                    帮你更快吃到美味菠萝的方法来啦，两分钟内就切好一整个菠萝，真的是简单快手!鲜菠萝切好后时，最好先用盐水泡上一段时间，就可以抑制菠萝酶对我们口腔粘膜和嘴唇的刺激，同时也会感到菠萝更加香甜了~-- 快速切菠萝攻略---- 用料 --菠萝 1只刀 1把纯净盐水 适量-- 做法 -
+                </div> -->
+                <div class="newsdtcon">
+                   {$article.content}
+                </div>
+               
+                <!-- <div class="updown clear">
+                    <p>上一篇：<a>没有了</a></p>
+                    <p>下一篇：<a href="/news_show.aspx?id=4556">我和你缠缠绵绵，丝丝入味</a></p>
+                </div> -->
+            </div>
+            <!-- <div class="clear">
+                <img src="/template/platform_default/new/images/ads/ads8.jpg" /></div>
+ -->
+            
+            <!-- <div class="relatedcon relatedconb clear">
+                <h2>我要发表评论:</h2>
+                <div class="clear">
+                    <form id="feedback_form" name="feedback_form" method="post" url="/Tools/submit_ajax.ashx?action=topic_comment&id=4557&TopicType=1">         TopicType=1 为土购资讯，为了和营养课堂区分
+                        <textarea name="txtContent" id="txtContent" class="textareas" style="width: 878px;" onfocus="if(this.value=='随便说点什么吧...')this.value=''">随便说点什么吧...</textarea>
+                        <div class="slogin slogin1 clear">
+                            <span>网友评论<font>(0)</font></span>
+                            <input id="btnSubmit" name="btnSubmit" class="loinb right" type="button" value="发表评论"  onclick="SubmitComment()"/>                            
+                            <input name="txtEmail" id="txtEmail"  type="text" class="loinp right" onfocus="if(this.value=='( 邮箱信息不会公开）')this.value=''" value="( 邮箱信息不会公开）"/>
+                            <em class="right"><a href="/login.aspx?url=/show-4557.aspx#comment">登录</a> | <a href="/reg.aspx?url=/show-4557.aspx#comment">注册</a> | 匿名评论请填写邮箱：</em>
+                        </div>
+                    </form>
+
+                    <div class="reply1 clear">
+                        <ul>
+                            
+                        </ul>
+                    </div>
+                    <div class="replyms clear"><a href="#">更多精彩评论</a></div>
+                </div>
+            </div> -->
+        </div>
+        <div class="newslsrt right">
+           <!--  <div class="newslsrtc">
+                <h2>热销产品</h2>
+                <div class="newspro">
+
+                    
+                    <dl>
+                        <dt><a href="/tcproduct-6792.aspx">
+                            <img src="/UploadFile/product/1197/201605121038386743_100_100.jpg" width="55" height="55" title="" alt="赣南安远新鲜橙子纯天然农家水果 安远脐橙原产地现摘现发10斤特价 包邮" /></a></dt>
+                        <dd>
+                            <p><a href="/tcproduct-6792.aspx">赣南安远新鲜橙子纯天然农家水果 安远脐橙原产地现摘现发10斤特价 包邮</a></p>
+                            <em><a href="/tcproduct-6792.aspx">去看看</a><font>￥100.00</font></em></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt><a href="/tcproduct-6652.aspx">
+                            <img src="/UploadFile/product/317/201611120828292186_100_100.jpg" width="55" height="55" title="" alt="【土购网】农家土鸡蛋 柴鸡蛋笨鸡蛋20枚" /></a></dt>
+                        <dd>
+                            <p><a href="/tcproduct-6652.aspx">【土购网】农家土鸡蛋 柴鸡蛋笨鸡蛋20枚</a></p>
+                            <em><a href="/tcproduct-6652.aspx">去看看</a><font>￥19.90</font></em></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt><a href="/tcproduct-6715.aspx">
+                            <img src="/UploadFile/product/317/201603231352203903_100_100.jpg" width="55" height="55" title="" alt="【土购网】 树上熟海南芒果贵妃芒约5斤装" /></a></dt>
+                        <dd>
+                            <p><a href="/tcproduct-6715.aspx">【土购网】 树上熟海南芒果贵妃芒约5斤装</a></p>
+                            <em><a href="/tcproduct-6715.aspx">去看看</a><font>￥80.00</font></em></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt><a href="/tcproduct-2304.aspx">
+                            <img src="/UploadFile/product/317/201612231007151705_100_100.jpg" width="55" height="55" title="" alt="江西特产干货 上犹银鱼干250g 海鲜水产干货" /></a></dt>
+                        <dd>
+                            <p><a href="/tcproduct-2304.aspx">江西特产干货 上犹银鱼干250g 海鲜水产干货</a></p>
+                            <em><a href="/tcproduct-2304.aspx">去看看</a><font>￥48.00</font></em></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt><a href="/tcproduct-2062.aspx">
+                            <img src="/UploadFile/product/317/201611261612585986_100_100.jpg" width="55" height="55" title="" alt="赣南脐橙血橙5斤装 江西特产红橙子新鲜水果 九省包邮" /></a></dt>
+                        <dd>
+                            <p><a href="/tcproduct-2062.aspx">赣南脐橙血橙5斤装 江西特产红橙子新鲜水果 九省包邮</a></p>
+                            <em><a href="/tcproduct-2062.aspx">去看看</a><font>￥68.00</font></em></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt><a href="/tcproduct-2058.aspx">
+                            <img src="/UploadFile/product/317/201412091801566303_100_100.jpg" width="55" height="55" title="" alt="南康白心甜柚7个装  南康蜜柚柚子" /></a></dt>
+                        <dd>
+                            <p><a href="/tcproduct-2058.aspx">南康白心甜柚7个装  南康蜜柚柚子</a></p>
+                            <em><a href="/tcproduct-2058.aspx">去看看</a><font>￥80.00</font></em></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt><a href="/tcproduct-2136.aspx">
+                            <img src="/UploadFile/product/317/201512281032174079_100_100.jpg" width="55" height="55" title="" alt="绍坤世家 黄元米果 250g袋装 江西赣南田村客家特产" /></a></dt>
+                        <dd>
+                            <p><a href="/tcproduct-2136.aspx">绍坤世家 黄元米果 250g袋装 江西赣南田村客家特产</a></p>
+                            <em><a href="/tcproduct-2136.aspx">去看看</a><font>￥6.00</font></em></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt><a href="/tcproduct-6759.aspx">
+                            <img src="/UploadFile/product/317/201704061151189701_100_100.jpg" width="55" height="55" title="" alt="【土购网】新鲜农家土猪肉500g  养殖1年土猪" /></a></dt>
+                        <dd>
+                            <p><a href="/tcproduct-6759.aspx">【土购网】新鲜农家土猪肉500g  养殖1年土猪</a></p>
+                            <em><a href="/tcproduct-6759.aspx">去看看</a><font>￥30.00</font></em></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt><a href="/tcproduct-6132.aspx">
+                            <img src="/UploadFile/product/317/201611041123062285_100_100.jpg" width="55" height="55" title="" alt="寻乌蜜桔橘子3斤  新鲜水果蜜橘" /></a></dt>
+                        <dd>
+                            <p><a href="/tcproduct-6132.aspx">寻乌蜜桔橘子3斤  新鲜水果蜜橘</a></p>
+                            <em><a href="/tcproduct-6132.aspx">去看看</a><font>￥26.80</font></em></dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt><a href="/tcproduct-6653.aspx">
+                            <img src="/UploadFile/product/317/201603041017385206_100_100.jpg" width="55" height="55" title="" alt="【土购网】农家散家土鸡青脚母鸡 约2斤" /></a></dt>
+                        <dd>
+                            <p><a href="/tcproduct-6653.aspx">【土购网】农家散家土鸡青脚母鸡 约2斤</a></p>
+                            <em><a href="/tcproduct-6653.aspx">去看看</a><font>￥98.00</font></em></dd>
+                    </dl>
+                    
+
+                </div>
+            </div> -->
+            <!-- <div class="newslsrtc">
+                <div class="hd"><em>水果蔬菜</em><em>肉类海鲜</em><em>休闲食品</em></div>
+                <div class="bd clear">
+                    <ul class="newsclass">
+                        
+                        <li><a href="/category-424.aspx">山楂</a></li>
+                        
+                        <li><a href="/category-426.aspx">菠萝/凤梨</a></li>
+                        
+                        <li><a href="/category-427.aspx">*芒果</a></li>
+                        
+                        <li><a href="/category-428.aspx">香蕉</a></li>
+                        
+                        <li><a href="/category-429.aspx">*苹果</a></li>
+                        
+                        <li><a href="/category-430.aspx">奇异果/猕猴桃</a></li>
+                        
+                        <li><a href="/category-431.aspx">火龙果</a></li>
+                        
+                        <li><a href="/category-433.aspx">柠檬</a></li>
+                        
+                        <li><a href="/category-434.aspx">龙眼/荔枝</a></li>
+                        
+                        <li><a href="/category-435.aspx">梨</a></li>
+                        
+                        <li><a href="/category-436.aspx">瓜类</a></li>
+                        
+                        <li><a href="/category-437.aspx">提子/葡萄</a></li>
+                        
+                        <li><a href="/category-438.aspx">榴莲</a></li>
+                        
+                        <li><a href="/category-439.aspx">*车厘子/樱桃</a></li>
+                        
+                        <li><a href="/category-440.aspx">*脐橙</a></li>
+                        
+                        <li><a href="/category-442.aspx">鲜蛋/土鸡蛋</a></li>
+                        
+                        <li><a href="/category-443.aspx">咸蛋</a></li>
+                        
+                        <li><a href="/category-444.aspx">皮蛋</a></li>
+                        
+                        <li><a href="/category-445.aspx">猪肉</a></li>
+                        
+                        <li><a href="/category-446.aspx">牛羊肉</a></li>
+                        
+                        <li><a href="/category-447.aspx">家禽类</a></li>
+                        
+                        <li><a href="/category-448.aspx">鱼类</a></li>
+                        
+                        <li><a href="/category-449.aspx">虾类</a></li>
+                        
+                        <li><a href="/category-450.aspx">蟹类</a></li>
+                        
+                        <li><a href="/category-451.aspx">贝类</a></li>
+                        
+                        <li><a href="/category-457.aspx">枇杷</a></li>
+                        
+                        <li><a href="/category-458.aspx">圣女果</a></li>
+                        
+                        <li><a href="/category-459.aspx">草莓</a></li>
+                        
+                        <li><a href="/category-468.aspx">山竹</a></li>
+                        
+                        <li><a href="/category-480.aspx">石榴</a></li>
+                        
+                        <li><a href="/category-486.aspx">竹笋类</a></li>
+                        
+                        <li><a href="/category-487.aspx">花菜类</a></li>
+                        
+                        <li><a href="/category-488.aspx">叶菜类</a></li>
+                        
+                        <li><a href="/category-489.aspx">豆荚类</a></li>
+                        
+                        <li><a href="/category-490.aspx">*茄类/瓜果类</a></li>
+                        
+                        <li><a href="/category-491.aspx">块茎类</a></li>
+                        
+                        <li><a href="/category-492.aspx">根菜类</a></li>
+                        
+                        <li><a href="/category-493.aspx">水生菜类</a></li>
+                        
+                        <li><a href="/category-494.aspx">野生菜类</a></li>
+                        
+                        <li><a href="/category-495.aspx">其他新鲜蔬菜</a></li>
+                        
+                        <li><a href="/category-502.aspx">杨桃</a></li>
+                        
+                        <li><a href="/category-503.aspx">青枣</a></li>
+                        
+                        <li><a href="/category-506.aspx">其他</a></li>
+                        
+                        <li><a href="/category-524.aspx">软体类</a></li>
+                        
+                        <li><a href="/category-525.aspx">藻类</a></li>
+                        
+                        <li><a href="/category-526.aspx">龟鳖类</a></li>
+                        
+                        <li><a href="/category-527.aspx">其他</a></li>
+                        
+                        <li><a href="/category-528.aspx">柚子</a></li>
+                        
+                        <li><a href="/category-529.aspx">桃</a></li>
+                        
+                        <li><a href="/category-530.aspx">杨梅</a></li>
+                        
+                        <li><a href="/category-532.aspx">李子</a></li>
+                        
+                        <li><a href="/category-552.aspx">宅配套餐</a></li>
+                        
+                        <li><a href="/category-553.aspx">宅配套餐</a></li>
+                        
+                        <li><a href="/category-557.aspx">柑类</a></li>
+                        
+                        <li><a href="/category-558.aspx">蒜葱类</a></li>
+                        
+                        <li><a href="/category-559.aspx">*菌菇类</a></li>
+                        
+                        <li><a href="/category-560.aspx">有机蔬菜</a></li>
+                        
+                    </ul>
+                    <ul class="newsclass">
+                        
+                        <li><a href="/category-787.aspx">其他</a></li>
+                        
+                        <li><a href="/category-779.aspx">皮/咸蛋</a></li>
+                        
+                        <li><a href="/category-780.aspx">其他</a></li>
+                        
+                        <li><a href="/category-564.aspx">猪肉</a></li>
+                        
+                        <li><a href="/category-565.aspx">牛肉</a></li>
+                        
+                        <li><a href="/category-566.aspx">羊肉</a></li>
+                        
+                        <li><a href="/category-567.aspx">*鸡肉</a></li>
+                        
+                        <li><a href="/category-568.aspx">鸭肉</a></li>
+                        
+                        <li><a href="/category-569.aspx">鹅/鸽</a></li>
+                        
+                        <li><a href="/category-570.aspx">鲜/土鸡蛋</a></li>
+                        
+                        <li><a href="/category-571.aspx">进口肉</a></li>
+                        
+                        <li><a href="/category-572.aspx">香/腊肠</a></li>
+                        
+                        <li><a href="/category-573.aspx">肉类礼盒</a></li>
+                        
+                        <li><a href="/category-575.aspx">*鱼类</a></li>
+                        
+                        <li><a href="/category-576.aspx">虾类</a></li>
+                        
+                        <li><a href="/category-577.aspx">蟹/贝类</a></li>
+                        
+                        <li><a href="/category-578.aspx">龟鳖类</a></li>
+                        
+                        <li><a href="/category-579.aspx">藻类</a></li>
+                        
+                        <li><a href="/category-580.aspx">软体类</a></li>
+                        
+                        <li><a href="/category-581.aspx">*海产干货</a></li>
+                        
+                        <li><a href="/category-582.aspx">海鲜礼盒</a></li>
+                        
+                        <li><a href="/category-586.aspx">*腌/腊肉</a></li>
+                        
+                        <li><a href="/category-592.aspx">鸭鹅蛋</a></li>
+                        
+                    </ul>
+                    <ul class="newsclass">
+                        
+                        <li><a href="/category-782.aspx">脱水蔬菜</a></li>
+                        
+                        <li><a href="/category-783.aspx">酱腌菜</a></li>
+                        
+                        <li><a href="/category-784.aspx">蔬菜制品</a></li>
+                        
+                        <li><a href="/category-256.aspx">*核桃</a></li>
+                        
+                        <li><a href="/category-257.aspx">碧根果/长寿果</a></li>
+                        
+                        <li><a href="/category-258.aspx">*杏仁/巴旦木</a></li>
+                        
+                        <li><a href="/category-259.aspx">夏威夷果</a></li>
+                        
+                        <li><a href="/category-260.aspx">*开心果</a></li>
+                        
+                        <li><a href="/category-261.aspx">*腰果</a></li>
+                        
+                        <li><a href="/category-262.aspx">无花果</a></li>
+                        
+                        <li><a href="/category-263.aspx">鲍鱼果</a></li>
+                        
+                        <li><a href="/category-264.aspx">松子</a></li>
+                        
+                        <li><a href="/category-265.aspx">榛子</a></li>
+                        
+                        <li><a href="/category-266.aspx">瓜子</a></li>
+                        
+                        <li><a href="/category-267.aspx">花生</a></li>
+                        
+                        <li><a href="/category-268.aspx">栗类</a></li>
+                        
+                        <li><a href="/category-269.aspx">其他</a></li>
+                        
+                        <li><a href="/category-270.aspx">胡桃</a></li>
+                        
+                        <li><a href="/category-271.aspx">兰花豆/蚕豆</a></li>
+                        
+                        <li><a href="/category-272.aspx">青豆</a></li>
+                        
+                        <li><a href="/category-273.aspx">白果/银杏果</a></li>
+                        
+                        <li><a href="/category-274.aspx">枣类制品</a></li>
+                        
+                        <li><a href="/category-275.aspx">*葡萄干</a></li>
+                        
+                        <li><a href="/category-276.aspx">梅类制品</a></li>
+                        
+                        <li><a href="/category-277.aspx">山楂类制品</a></li>
+                        
+                        <li><a href="/category-278.aspx">芒果干</a></li>
+                        
+                        <li><a href="/category-279.aspx">笋类制品</a></li>
+                        
+                        <li><a href="/category-280.aspx">蓝莓</a></li>
+                        
+                        <li><a href="/category-281.aspx">杏仁干</a></li>
+                        
+                        <li><a href="/category-282.aspx">无花果干</a></li>
+                        
+                        <li><a href="/category-283.aspx">凤梨/菠萝蜜干</a></li>
+                        
+                        <li><a href="/category-284.aspx">*香蕉片</a></li>
+                        
+                        <li><a href="/category-285.aspx">蔬果干</a></li>
+                        
+                        <li><a href="/category-286.aspx">圣女果干</a></li>
+                        
+                        <li><a href="/category-287.aspx">猕猴桃干</a></li>
+                        
+                        <li><a href="/category-288.aspx">橄榄</a></li>
+                        
+                        <li><a href="/category-289.aspx">桑果</a></li>
+                        
+                        <li><a href="/category-290.aspx">薯类制品</a></li>
+                        
+                        <li><a href="/category-291.aspx">糖果</a></li>
+                        
+                        <li><a href="/category-292.aspx">果冻/布丁</a></li>
+                        
+                        <li><a href="/category-293.aspx">罐头</a></li>
+                        
+                        <li><a href="/category-294.aspx">口香糖</a></li>
+                        
+                        <li><a href="/category-295.aspx">其他食品</a></li>
+                        
+                        <li><a href="/category-296.aspx">牛羊类</a></li>
+                        
+                        <li><a href="/category-297.aspx">猪肉类</a></li>
+                        
+                        <li><a href="/category-299.aspx">禽类</a></li>
+                        
+                        <li><a href="/category-300.aspx">鱼虾制品</a></li>
+                        
+                        <li><a href="/category-301.aspx">豆干制品</a></li>
+                        
+                        <li><a href="/category-306.aspx">其他</a></li>
+                        
+                        <li><a href="/category-307.aspx">果味派</a></li>
+                        
+                        <li><a href="/category-308.aspx">薯片/薯条</a></li>
+                        
+                        <li><a href="/category-309.aspx">巧克力派</a></li>
+                        
+                        <li><a href="/category-310.aspx">面点</a></li>
+                        
+                        <li><a href="/category-311.aspx">茶点</a></li>
+                        
+                        <li><a href="/category-312.aspx">其他</a></li>
+                        
+                        <li><a href="/category-313.aspx">*饼干</a></li>
+                        
+                        <li><a href="/category-314.aspx">传统糕点</a></li>
+                        
+                        <li><a href="/category-315.aspx">西式糕点</a></li>
+                        
+                        <li><a href="/category-316.aspx">甜甜圈</a></li>
+                        
+                        <li><a href="/category-317.aspx">月饼</a></li>
+                        
+                        <li><a href="/category-318.aspx">*曲奇</a></li>
+                        
+                        <li><a href="/category-455.aspx">杏干</a></li>
+                        
+                        <li><a href="/category-461.aspx">李柰干</a></li>
+                        
+                        <li><a href="/category-466.aspx">蟹贝制品</a></li>
+                        
+                        <li><a href="/category-470.aspx">其他蔬菜制品</a></li>
+                        
+                        <li><a href="/category-471.aspx">脱水蔬菜</a></li>
+                        
+                        <li><a href="/category-472.aspx">冷冻蔬菜</a></li>
+                        
+                        <li><a href="/category-473.aspx">酱腌菜</a></li>
+                        
+                        <li><a href="/category-481.aspx">柠檬片</a></li>
+                        
+                        <li><a href="/category-482.aspx">其他</a></li>
+                        
+                        <li><a href="/category-483.aspx">笋类制品</a></li>
+                        
+                    </ul>
+                </div>
+            </div> -->
+            <!-- <div class="newslsrtc">
+                <h2><a href="news.html">更多>></a>热销品牌</h2>
+                <ul class="newslogo">
+                    <li><a href="/member/Ads_click_Mamage.aspx?id=7149&page=http%3a%2f%2f" target="_blank"><img src="/UploadFile/ggs/201605261838187358.jpg" alt=""/></a></li>
+                    <li><a href="/Shop848/index.aspx" target="_blank"><img src="/UploadFile/ggs/201605301716443453.jpg" alt=""/></a></li>
+                    <li><a href="/" target="_blank"><img src="/UploadFile/ggs/201605301702219649.jpg" alt=""/></a></li>
+                    <li><a href="/" target="_blank"><img src="/UploadFile/ggs/201605301702386119.jpg" alt=""/></a></li>
+                    <li><a href="/" target="_blank"><img src="/UploadFile/ggs/201605301702597631.jpg" alt=""/></a></li>
+                    <li><a href="/" target="_blank"><img src="/UploadFile/ggs/201605301703155120.jpg" alt=""/></a></li>
+                </ul>
+            </div> -->
+            <!-- <div class="newslsrtc">
+                <h2><a href="news.html">更多>></a>最新文章</h2>
+                <dl class="newslsrtc2">
+                    <dt>
+                        
+                        <em  class="em1"><a href="/news_show-4557.aspx">
+                        
+                        <img src="/UploadFile/news/201703161501147628_830_400.jpg" width="120" height="58" /><span>两分钟内切整个菠萝，这方法太好用!</span></a></em>
+                        
+                        <em ><a href="/news_show-4556.aspx">
+                        
+                        <img src="/UploadFile/news/201703161456055234_830_400.jpg" width="120" height="58" /><span>我和你缠缠绵绵，丝丝入味</span></a></em>
+                        
+                    </dt>
+                   
+
+                    
+                    <dd>
+                        <p><a href="/news_show-4555.aspx">4款春季减肥食品 多吃不胖</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4554.aspx">豆浆的5大误解，你上当没？</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4553.aspx">天气变化太快，预防感冒入侵，春季吃这道菜</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4552.aspx">云南一个充满神秘色彩的地方</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4551.aspx">吃完水果核别扔，变成杯中森林</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4550.aspx">来到青岛，一定要尝过这些，才不枉此行</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4549.aspx">台湾特产——是否有你忘不掉的美味</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4548.aspx">兴国鱼丝，与你相思的赣州特产</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4547.aspx">赣州特产还看“赣南脐橙”</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4546.aspx">“花”一“生”时间爱你</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4545.aspx">“苹”水相逢，果然大不同</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4544.aspx">赣南脐橙，给你一个妙不可言的冬天</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4543.aspx">白茶是什么茶，一起涨姿势吧</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4542.aspx">唯美食与爱不可“菇”负</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4541.aspx">红莲子的营养价值有哪些呢？</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4540.aspx">“椪”上你我心“柑”情愿</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4539.aspx">生活也需要美食来“鸭鸭”惊</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4538.aspx">了解玫瑰花茶的功效和作用，享受健康生活</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4537.aspx">葵瓜子的营养价值会有哪些呢？</a></p>
+                    </dd>
+                    
+                    <dd>
+                        <p><a href="/news_show-4536.aspx">莲子心的功效与作用有哪些，一起来看看！</a></p>
+                    </dd>
+                    
+                </dl>
+            </div> -->
+            <!-- <div class="newslsrtc born"><a href="#">
+                <img src="/template/platform_default/new/images/ads/ads7.jpg" /></a></div> -->
+        </div>
+        <div class="clear0"></div>
+    </div>
+<!--购物车结束-->
+<include file="Public/footer"/>

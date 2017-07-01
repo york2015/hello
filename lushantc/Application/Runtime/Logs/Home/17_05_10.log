@@ -1,0 +1,575 @@
+[ 2017-05-10T23:32:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `product` WHERE `stick` = 1 LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `index_product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 1 AND `floor` = 1 LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `index_product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 1 AND `floor` = 2 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 2 AND `floor` = 1 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 2 AND `floor` = 2 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 1 LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 2 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 3 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 1 LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 2 LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 3 LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 4 LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 2 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 3 LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 4 LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.147008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-10T23:32:28+08:00 ] 127.0.0.1 /Home/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-10T23:33:53+08:00 ] 127.0.0.1 /Home/index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'sss\' union  select * from user/*' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T23:33:56+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T23:34:12+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'sss\' union  select * from user/*;' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T23:34:15+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T23:36:50+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+
+[ 2017-05-10T23:38:02+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'sagsad\' union select * from user ;/*' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-10T23:38:26+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'sagsad\' union select * from user ;/*' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-10T23:39:11+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'sagsad\' union select * from user /*' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-10T23:43:36+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T23:43:38+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-10T23:43:43+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'sagsad\' union select * from user /*' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-10T23:50:28+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 65 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, boolean given D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+
+[ 2017-05-10T23:50:51+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 65 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, boolean given D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+
+[ 2017-05-10T23:51:29+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 65 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, boolean given D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+
+[ 2017-05-10T23:52:56+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0040s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 65 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, boolean given D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 68 行.
+
+[ 2017-05-10T23:55:21+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, boolean given D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 75 行.
+
+[ 2017-05-10T23:55:45+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, boolean given D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 75 行.
+
+[ 2017-05-10T23:56:23+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+
+[ 2017-05-10T23:56:54+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+
+[ 2017-05-10T23:57:06+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+
+[ 2017-05-10T23:57:44+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+
+[ 2017-05-10T23:58:15+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+
+[ 2017-05-10T23:58:18+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+
+[ 2017-05-10T23:59:05+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, boolean given D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 75 行.
+
+[ 2017-05-10T23:59:34+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 66 行.
+NOTIC: [2] mysql_fetch_array() expects parameter 1 to be resource, boolean given D:\wamp\www\lushantc\Application\Home\Controller\IndexController.class.php 第 75 行.
+

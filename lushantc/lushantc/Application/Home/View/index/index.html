@@ -1,0 +1,560 @@
+<include file='public:header'/>
+<meta http-equiv="Conten-Type" charset="utf-8"/>
+<div class="tugooFast">
+        <ul>
+            <li class="li1"><a href="#floor1"><i></i><em>水果蔬菜</em></a></li>
+            <li class="li2"><a href="#floor2"><i></i><em>肉类海鲜</em></a></li>
+            <li class="li3"><a href="#floor3"><i></i><em>休闲食品</em></a></li>
+            <li class="li4"><a href="#floor4"><i></i><em>粮油副食</em></a></li>
+            <li class="li5"><a href="#floor5"><i></i><em>茶叶冲饮</em></a></li>
+           
+        </ul>
+    </div>
+<!--banner开始-->
+<div class="banner wgt-slide">
+<div class="wgt-slide-container">
+<ul>
+<li class="item current" style="opacity:1; z-index:1; background:url(__ROOT__/Upload/home/201703311428316915.jpg) #ffffff center no-repeat"></li>
+<li class="item " style="opacity:; z-index:; background:url(__ROOT__/Upload/Home/201703311413165627.jpg) #ffffff center no-repeat"></li>
+<li class="item " style="opacity:; z-index:; background:url(__ROOT__/Upload/Home/201703311502238255.jpg) #ffffff center no-repeat"></li>
+<li class="item " style="opacity:; z-index:; background:url(__ROOT__/Upload/Home/201703311444282179.jpg) #ffffff center no-repeat"></li>
+<li class="item " style="opacity:; z-index:; background:url(__ROOT__/Upload/Home/201703291414158089.jpg) #ffffff center no-repeat"></li>
+<li class="item " style="opacity:; z-index:; background:url(__ROOT__/Upload/Home/201612171638406580.jpg) #ffffff center no-repeat"></li>
+</ul>
+</div>
+<div class="g-grid">
+<a rel="0" href="http://www.lushantc.com" class="btn-banner" target="_blank" style="display:block;">查看详情</a>
+<a rel="1" href="http://www.lushantc.com" class="btn-banner" target="_blank" style="display:;">查看详情</a>
+<a rel="2" href="http://www.lushantc.com" class="btn-banner" target="_blank" style="display:;">查看详情</a>
+<a rel="3" href="http://www.lushantc.com" class="btn-banner" target="_blank" style="display:;">查看详情</a>
+<a rel="4" href="http://www.lushantc.com" class="btn-banner" target="_blank" style="display:;">查看详情</a>
+<a rel="5" href="http://www.lushantc.com" class="btn-banner" target="_blank" style="display:;">查看详情</a>
+ <div class="wgt-slide-trigger">
+<a href="javascript:;" class="item current"></a>
+<a href="javascript:;" class="item "></a>
+<a href="javascript:;" class="item "></a>
+<a href="javascript:;" class="item "></a>
+<a href="javascript:;" class="item "></a>
+<a href="javascript:;" class="item "></a>
+</div>
+
+    
+    </div>
+</div>
+<!--banner结束-->
+
+<!--今日推荐-->
+    <div class="wrap clear">
+        <div class="titc clear"><b>特产推荐</b><img src="__ROOT__/Public/images/Home/txt2.png" /></div>
+        <div class="con1f left">
+            <ul id="tuijie">
+            <foreach name="a" item="b" empty="没有推荐产品">
+               <li>
+               		<div class="pic">
+               			<a href="home/item?id={$b.p_id}" target="_blank">
+               				<img src="__ROOT__{$b.thumb}" height="200px;" width="200px"/>
+               			</a>
+               		</div>
+               		<a href="/product-5915.aspx">{$b.p_name}</a>
+               		<p>￥{$b.sale_price}</p><!-- 打折价格 -->
+               		<del>0.00</del>
+               		<em><a href="home/item?id={$b.p_id}">立即抢购</a></em>
+               	</li>
+               	</foreach>
+            </ul>
+        </div>
+       
+        <div class="con1rt right">
+            <div><a href="http://www.lushantc.com/tongcheng.aspx" target="_blank"><img src="__ROOT__/Upload/product/201609161637356343.jpg" alt=""/></a></div>
+            <div class="dynamic clear">
+                <h3><a href="/news.aspx">更多>></a><b>本站动态</b></h3>
+                <ul>
+                    
+                    <li>
+                        <span>[<a>行业新闻</a>]</span>
+                        <a href="/news_show-4557.aspx" title="两分钟内切整个菠萝，这方法太好用!" target="_blank">两分钟内切整个菠萝，这方法太好用!</a>
+                        
+                    </li>
+                    
+                    <li>
+                        <span>[<a>养生保健</a>]</span>
+                        <a href="/news_show-4556.aspx" title="我和你缠缠绵绵，丝丝入味" target="_blank">我和你缠缠绵绵，丝丝入味</a>
+                        
+                    </li>
+                    
+                    <li>
+                        <span>[<a>养生保健</a>]</span>
+                        <a href="/news_show-4555.aspx" title="4款春季减肥食品 多吃不胖" target="_blank">4款春季减肥食品 多吃不胖</a>
+                        
+                    </li>
+                    
+                    <li>
+                        <span>[<a>养生保健</a>]</span>
+                        <a href="/news_show-4554.aspx" title="豆浆的5大误解，你上当没？" target="_blank">豆浆的5大误解，你上当没？</a>
+                        
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="clear0"></div>
+    </div>
+ <!--今日推荐结束-->
+
+  <!--水果蔬菜-->
+    <div class="wrap clear" id="floor1">
+        <div class="titc tit1 clear"><em class="right">
+                                         
+                                         <a href="http://www.lushantc.com//category-429.aspx" target="_blank">苹果</a>
+                                         <a href="http://www.lushantc.com//category-438.aspx" target="_blank">榴莲</a>
+                                         <a href="http://www.lushantc.com//category-431.aspx" target="_blank">火龙果</a>
+                                         <a href="http://www.lushantc.com//category-468.aspx" target="_blank">山竹</a>
+                                         <a href="http://www.lushantc.com//category-439.aspx" target="_blank">樱桃</a>
+                                         <a href="http://www.lushantc.com//category-491.aspx" target="_blank">块茎类</a>
+                                         <a href="http://www.lushantc.com//category-488.aspx" target="_blank">叶菜类</a>
+                                         <a href="http://www.lushantc.com//category-490.aspx" target="_blank">茄果瓜类</a>
+                                         <a href="http://www.lushantc.com/http://www.lushantc.com/category-31.aspx" target="_blank">更多</a>
+                                         <a href="http://www.lushantc.com//category-437.aspx" target="_blank">葡萄/提子</a>
+                                         <a href="http://www.lushantc.com//category-31.aspx" target="_blank">更多选项</a>
+            </em><i></i><b>水果蔬菜</b></div>
+        <div class="FruitVeg">
+            <div class="FruitVeglf left">
+                <div class="FruitVegpic lfcomc clear"><a href="home/category/index?wd=水果蔬菜" target="_blank"><img src="__ROOT__/Upload/product/201605261726149325.jpg" alt=""/></a><p>
+                    <em><i class="i1"></i><a href="home/category/index?wd=水果" target="_blank">水果</a></em>
+                    <em><i class="i2"></i><a href="home/category/index?wd=蔬菜" target="_blank">蔬菜</a></em>
+                    </p></div>
+                <div class="FruitVegtxt clear">
+                    <div class="left">
+                        <h3><a href="#"><a href="/tcproduct-6287.aspx" target="_blank">预售赣南脐橙</a>   >></a></h3>
+                        <p><em><a href="/tcproduct-6771.aspx" target="_blank">山东苹果</a></em>
+                        <em><a href="/tcproduct-6198.aspx" target="_blank">柚子</a></em>
+                        <em><a href="/tcproduct-6762.aspx" target="_blank">金枕榴莲</a></em>
+                        <em><a href="/category-468.aspx" target="_blank">山竹</a></em>
+                        <em><a href="/category-430.aspx" target="_blank">奇异果</a></em>
+                         <em><a href="/category-439.aspx" target="_blank">车厘子</a></em></p>
+                    </div>
+                    <div class="left">
+                        <h3><a href="#"><a href="/tcproduct-6993.aspx" target="_blank">新鲜蔬菜套餐</a>   >></a></h3>
+                        <p><em><a href="/category-552.aspx" target="_blank">有机蔬菜</a></em>
+                        <em><a href="/category-490.aspx" target="_blank">瓜果类</a></em>
+                        <em><a href="/category-488.aspx" target="_blank">叶菜类</a></em>
+                        <em><a href="/category-492.aspx" target="_blank">根茎类</a></em>
+                        <em><a href="/category-558.aspx" target="_blank">葱姜蒜椒</a></em>
+                        <em><a href="/category-559.aspx" target="_blank">菌菇类</a></em></p>
+                    </div>
+                </div>
+                <div class="botp clear"><a href="home/category?wd=菜" target="_blank"><img src="__ROOT__/Upload/product/201605271117384118.jpg" alt=""/></a></div>
+            </div>
+            <div class="FruitVegrt right">
+                <ul>
+                    <li class="lbig">
+                        <p><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201610261625495442.jpg" alt=""/></a></p>
+                        <div id="slideBox" class="slideBox botp slidepic1">
+                            <div class="hd"><em>1</em></div><div class="bd"><p><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201701191646028728.jpg"/></a></p></div>
+                        </div>
+                        <p class="botp"><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605271150499545.jpg" alt=""/></a></p>
+                    </li>
+                    <li>
+                    <foreach name="c" item="s">
+                    <p <neq name="key" value="0">class="botp"</neq>><a href="home/item?id={$s.p_id}" target="_blank"><img src="__ROOT__{$s.thumb}" alt=""/></a></p>
+                    </foreach> 
+                    </li>
+                    <li>
+                    <foreach name="d" item="e">
+                        <p <neq name="key" value="0">class="botp"</neq>><a href=""><a href="home/item?id={$s.p_id}" target="_blank"><img src="__ROOT__{$e.thumb}" alt=""/></a></a></p>
+                         </foreach> 
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clear0"></div>
+        </div>
+        <div class="brand clear">
+          <ul>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605261838187358.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301716443453.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301702219649.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301702386119.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301702597631.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301703155120.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301703473738.jpg" alt=""/></a></li>
+            </ul> 
+        </div>
+    </div>
+    <!--水果蔬菜结束-->
+
+
+   <!--肉蛋禽类-->
+    <div class="wrap clear" id="floor2">
+        <div class="titc tit2 clear"><em class="right">
+                                         <a href="http://www.lushantc.com/category-565.aspx" target="_blank">牛肉</a>
+                                         <a href="http://www.lushantc.com/category-564.aspx" target="_blank">猪肉</a>
+                                         <a href="http://www.lushantc.com/category-567.aspx" target="_blank">鸡</a>
+                                         <a href="http://www.lushantc.com/category-575.aspx" target="_blank">鱼</a>
+                                         <a href="http://www.lushantc.com/category-576.aspx" target="_blank">虾</a>
+                                         <a href="http://www.lushantc.com/category-568.aspx" target="_blank">鸭</a>
+                                         <a href="http://www.lushantc.com/category-561.aspx" target="_blank">更多选项</a></em><i></i><b>肉类海鲜</b></div>
+        <div class="con3">
+            <div class="con3lf left">
+                <div class="con3lfpic clear"><a href="home/category?wd=肉" target="_blank"><img src="__ROOT__/Upload/product/201605261734515161.jpg" alt=""/></a>
+                <p><em><i class="i1"></i><a href="home/category?wd=蛋" target="_blank">蛋禽肉类</a></em>
+                    <em><i class="i2"></i><a href="home/category?wd=鱼" target="_blank">海鲜水产</a></em></p></div>
+                <div class="con3lftxt clear">
+                    <div class="left">
+                        <h3><em><a href="/tcproduct-6653.aspx" target="_blank">农家散养土鸡</a>   >></em>
+                        <em><a href="/product-4636.aspx" target="_blank">野生鲜活黄鳝</a>  >></em></h3>
+                        <p><em><a href="/category-564.aspx" target="_blank">猪肉</a></em>
+                        <em><a href="/category-566.aspx" target="_blank">羊肉</a></em>
+                        <em class="em1"><a href="/category-568.aspx" target="_blank">鸭肉</a></em>
+                        <em><a href="/category-565.aspx" target="_blank">牛肉</a></em>
+                        <em><a href="/category-567.aspx" target="_blank">鸡肉</a></em>
+                        <em class="em1"><a href="#000000" target="_blank">鸭肉</a></em>
+                        <em><a href="/category-570.aspx" target="_blank">土鸡蛋</a></em>
+                        <em><a href="/category-572.aspx" target="_blank">香辣肠</a></em>
+                        <em class="em1"><a href="/category-582.aspx" target="_blank">海鲜礼盒</a></em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="con3rt right">
+                <ul>
+                    <li class="lbig">
+                        <div id="slideBox" class="slideBox slidepic2">
+                            <div class="hd"><em>1</em></div><div class="bd"><p><a href="home/category?wd=牛排" target="_blank"><img src="__ROOT__/Upload/product/201701031412059418.jpg"/></a></p></div>
+                        </div>
+                        <p class="botp"><a href="home/category?wd=肉" target="_blank"><img src="__ROOT__/Upload/product/201611160932280389.jpg" alt=""/></a></p>
+                    </li>
+                    <foreach name='r1' item='rou'>
+                    <li>
+                       
+                        <p class="botp"><a href="home/item?id={$rou.p_id}" target="_blank"><img src="__ROOT__{$rou.thumb}" alt=""/></a></p>
+                    </li>
+                    </foreach>
+                    <foreach name='r2' item='rou2'>
+                    <li>
+  						 <p><a href="home/item?id={$rou2.p_id}" target="_blank"><img src="__ROOT__{$rou2.thumb}" alt=""/></a></p>
+                    </li>
+           </foreach>
+                </ul>
+            </div>
+            <div class="clear0"></div>
+        </div>
+ 
+    </div>
+    <div class="wrap ads clear"><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201612140915369482.jpg" alt=""/></a></div>
+
+    <!--肉蛋禽类结束-->
+
+    <!--休闲食品-->
+    <div class="wrap clear" id="floor3">
+        <div class="titc tit3 clear">
+            <em class="right">
+                <a href="http://www.lushantc.com/category.aspx?wd=巧克力" target="_blank">巧克力</a>
+                <a href="http://www.lushantc.com/category.aspx?wd=进口零食" target="_blank">进口零食</a>
+                <a href="http://www.lushantc.com/category-291.aspx" target="_blank">糖果</a>
+                <a href="http://www.lushantc.com/category-168.aspx" target="_blank">蜜饯果干</a>
+                <a href="http://www.lushantc.com/category-171.aspx" target="_blank">蛋糕饼干</a>
+                <a href="http://www.lushantc.com/category-167.aspx" target="_blank">坚果炒货</a>
+                <a href="http://www.lushantc.com/category-34.aspx" target="_blank">更多选项</a></em><i></i><b>休闲食品</b>
+        </div>
+        <div class="FruitVeg">
+            <div class="FruitVeglf left">
+                <div class="con4lfpic lfcomc clear">
+                    <a href="home/category?wd=干" target="_blank"><img src="__ROOT__/Upload/product/201701031434210389.jpg" alt=""/></a>
+                    <p>
+                        <em><i class="i1"></i><a href="home/category?wd=果" target="_blank">蜜饯果干</a></em>
+                        <em><i class="i2"></i><a href="home/category?wd=坚果" target="_blank">坚果炒货</a></em>
+                        <em><i class="i3"></i><a href="home/category?wd=豆" target="_blank">肉类豆干</a></em>
+                        <em><i class="i4"></i><a href="home/category?wd=膨化" target="_blank">膨化食品</a></em>
+                    </p>
+                </div>
+                <div class="con4lftxt clear">
+                    <div class="left">
+                        <h3><em><a href="/Shop1238/index.aspx" target="_blank">法丽兹办公休闲小吃</a>   >></em><em><a href="/product-5841.aspx" target="_blank">百丈泉南酸枣糕</a>   >></em><em><a href="/product-6371.aspx" target="_blank">采味园东北松子</a>   >></em></h3>
+                        <p><em><a href="/category-260.aspx" target="_blank">开心果</a></em><em><a href="/category-275.aspx" target="_blank">葡萄干</a></em><em><a href="/category-318.aspx" target="_blank">曲奇</a></em><em><a href="/category-284.aspx" target="_blank">香蕉片</a></em><em><a href="/category-309.aspx" target="_blank">巧克力</a></em><em><a href="/category-256.aspx" target="_blank">核桃</a></em><em><a href="/category-291.aspx" target="_blank">糖果</a></em><em><a href="/category-313.aspx" target="_blank">饼干</a></em><em><a href="/category-308.aspx" target="_blank">薯条</a></em></p>
+                    </div>
+                    <div class="left">
+                        <h3><em><a href="/product-6150.aspx" target="_blank">蓝百蓓蓝莓干</a>   >></em><em><a href="/product-5952.aspx" target="_blank">东北开口松子</a>   >></em><em><a href="/product-5731.aspx" target="_blank">小香驴纯香驴肉</a>   >></em></h3>
+                        <p><em><a href="/category-296.aspx" target="_blank">牛羊类</a></em><em><a href="/category-483.aspx" target="_blank">笋制品</a></em><em><a href="/category-261.aspx" target="_blank">腰果</a></em><em><a href="/category-281.aspx" target="_blank">杏仁干</a></em><em><a href="/category-284.aspx" target="_blank">香蕉片</a></em><em><a href="/category-310.aspx" target="_blank">面点</a></em><em><a href="/category-267.aspx" target="_blank">花生</a></em><em><a href="/category-277.aspx" target="_blank">山楂</a></em><em><a href="/category-289.aspx" target="_blank">桑果</a></em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="FruitVegrt right">
+                <ul>
+         <li class="lbig">
+                        <div id="slideBox" class="slideBox slidepic3">
+                            <div class="hd"><em>1</em></div><div class="bd"><p><a href="home/category?wd=旺" target="_blank"><img src="__ROOT__/Upload/product/201605271455419034.jpg"/></a></p></div>
+                        </div>
+                        <p class="botp">
+                         <foreach name='ls1' item='lingshi1'>
+                        <span <eq name='key' value='0' >class="bort"</eq>> <a href="home/item?id={$lingshi1.p_id}" target="_blank"><img src="__ROOT__{$lingshi1.thumb}" alt=""/></a></span>
+                         </foreach>
+                         </p>
+                        
+                    </li>
+                   
+                    <li>
+                        <foreach name='ls2' item='lingshi2'>
+                        <p <neq name="key" value="0">class="botp"</neq>><a href="home/item?id={$lingshi2.p_id}" target="_blank"><img src="__ROOT__{$lingshi2.thumb}" alt=""/></a></p>
+                      
+                       </foreach> 
+                    </li> 
+                         <li>
+                       <foreach name='ls3' item='lingshi3'>
+                        <p <neq name="key" value="0">class="botp"</neq>> <a href="home/item?id={$lingshi3.p_id}" target="_blank"><img src="__ROOT__{$lingshi3.thumb}" alt=""/></a>
+                       </p>
+                        </foreach>
+                    </li>
+                      
+                </ul>
+            </div>
+            <div class="clear0"></div>
+        </div>
+        <div class="brand clear">
+            <ul>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301714546390.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301719022312.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301719403413.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201606211456141381.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301722156212.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301723164967.jpg" alt=""/></a></li>
+                <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301724389134.jpg" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--休闲食品结束-->
+    
+    <!--粮油副食-->
+    <div class="wrap clear" id="floor4">
+        <div class="titc tit4 clear"><em class="right">
+                                         <a href="http://www.lushantc.com/category-242.aspx" target="_blank">干货</a>
+                                         <a href="http://www.lushantc.com/category-245.aspx" target="_blank">食用油</a>
+                                         <a href="http://www.lushantc.com/category-183.aspx" target="_blank">厨房调料</a>
+                                         <a href="http://www.lushantc.com/category-244.aspx" target="_blank">粗粮</a>
+                                         <a href="http://www.lushantc.com/category-590.aspx" target="_blank">调味酱</a>
+                                         <a href="http://www.lushantc.com/category-243.aspx" target="_blank">米面</a>
+                                         <a href="http://www.lushantc.com/category-33.aspx" target="_blank">更多选项</a></em><i></i><b>粮油副食</b></div>
+        <div class="con3">
+            <div class="con5lf left">
+                <div class="con3lfpic con5lfpic clear">
+                    <a href="home/category?wd=粮油" target="_blank"><img src="__ROOT__/Upload/product/201605261728481343.jpg" alt=""/></a><p>
+                    <em><i class="i1"></i><a href="home/category?wd=油" target="_blank">食用油</a></em>
+                    <em><i class="i2"></i><a href="home/category?wd=厨" target="_blank">厨房调料</a></em>
+                    <em><i class="i3"></i><a href="home/category?wd=米" target="_blank">米面杂粮</a></em>
+                    <em><i class="i4"></i><a href="home/category?wd=干货" target="_blank">干货速食</a>></em></p></div>
+                <div class="con3lftxt con5lftxt clear">
+                    <div class="left">
+                        <h3><em><a href="/product-6316.aspx" target="_blank">润心有机山茶油</a>   >></em><em><a href="/tcproduct-6788.aspx" target="_blank">预售菲尔雪新鲜龙粽</a>  >></em></h3>
+                        <p><em><a href="/category-350.aspx" target="_blank">山茶油</a></em>
+                        <em><a href="/category-351.aspx" target="_blank">橄榄油</a></em>
+                        <em><a href="/category-584.aspx" target="_blank">大豆油</a></em>
+                        <em><a href="/category-334.aspx" target="_blank">国产米</a></em>
+                        <em><a href="/category-335.aspx" target="_blank">泰国米</a></em>
+                        <em><a href="/category-331.aspx" target="_blank">面制品</a></em>
+                        <em><a href="/category-322.aspx" target="_blank">食用菌</a></em>
+                        <em><a href="/category-597.aspx" target="_blank">速食饭</a></em><em><a href="/category-590.aspx" target="_blank">调味酱</a></em></p>
+                    </div>
+                </div>
+            </div>
+            <div class="con5rt right">
+                <ul>
+                    <li>
+			 <foreach name='ly1' item='liangyou1'>
+			 <p <neq name="key" value="0">class="botp"</neq>><a href="home/item?id={$liangyou1.p_id}" target="_blank"><img src="__ROOT__{$liangyou1.thumb}" alt=""/></a></p>
+               </foreach>     
+                    </li>
+                    <li class="lbig">
+ 			<foreach name='ly2' item='liangyou2'>
+ 			<p <neq name="key" value="0">class="botp"</neq>><a href="home/item?id={$liangyou2.p_id}" target="_blank"><img src="__ROOT__{$liangyou2.thumb}" alt=""/></a></p>
+                    </foreach>
+                    </li>
+                    <li>
+                       <foreach name='ly3' item='liangyou3'>
+                        <p <neq name="key" value="0">class="botp"</neq>><a href="home/item?id={$liangyou3.p_id}" target="_blank"><img src="__ROOT__{$liangyou3.thumb}" alt=""/></a></p>
+                    </foreach>
+                    </li>
+                    <li>
+			<foreach name='ly4' item='liangyou4'>
+			 <p <neq name="key" value="0"> class="botp"</neq>><a href="home/item?id={$liangyou4.p_id}" target="_blank"><img src="__ROOT__{$liangyou4.thumb}" alt=""/></a></p>
+                   </foreach>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear0"></div>
+        </div>
+        <div class="brand clear">
+            <ul>
+                <li><a href="/Shop1236/index.aspx" target="_blank"><img src="__ROOT__/Upload/product/201605301730127325.jpg" alt=""/></a></li>
+                <li><a href="/Shop728/index.aspx" target="_blank"><img src="__ROOT__/Upload/product/201605301732522626.jpg" alt=""/></a></li>
+                <li><a href="/Shop967/index.aspx" target="_blank"><img src="__ROOT__/Upload/product/201605301734392177.jpg" alt=""/></a></li>
+                <li><a href="/Shop302/index.aspx" target="_blank"><img src="__ROOT__/Upload/product/201605301735412983.jpg" alt=""/></a></li>
+                <li><a href="/Shop289/index.aspx" target="_blank"><img src="__ROOT__/Upload/product/201605301737013649.jpg" alt=""/></a></li>
+                <li><a href="/" target="_blank"><img src="__ROOT__/Upload/product/201605301739107903.jpg" alt=""/></a></li>
+                <li><a href="/" target="_blank"><img src="__ROOT__/Upload/product/201605301738322591.jpg" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap ads clear"><a href="#"><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605261835490333.jpg" alt=""/></a></a></div>
+    <!--粮油副食结束-->
+
+    <!--茶叶冲饮-->
+    <div class="wrap clear" id="floor5">
+        <div class="titc tit5 clear"><em class="right">  
+                                         <a href="http://www.lushantc.com/category.aspx?wd=蜂蜜" target="_blank">蜂蜜</a>
+                                         <a href="http://www.lushantc.com/category-381.aspx" target="_blank">红茶</a>
+                                         <a href="http://www.lushantc.com/category.aspx?wd=铁观音" target="_blank">铁观音</a>
+                                         <a href="http://www.lushantc.com/category.aspx?wd=牛奶" target="_blank">牛奶</a>
+                                         <a href="http://www.lushantc.com/category.aspx?wd=麦片" target="_blank">麦片</a>
+                                         <a href="http://www.lushantc.com/category.aspx?wd=咖啡" target="_blank">咖啡</a>
+                                         <a href="http://www.lushantc.com/category.aspx?wd=普洱" target="_blank">普洱</a>
+                                         <a href="http://www.lushantc.com/category-35.aspx" target="_blank">更多选项</a></em><i></i><b>茶叶冲饮</b></div>
+        <div class="FruitVeg">
+            <div class="FruitVeglf left">
+                <div class="con5lfpic lfcomc clear">
+                    <a href="home/category?wd=茶" target="_blank"><img src="__ROOT__/Upload/product/201605261715365840.jpg" alt=""/></a><p>
+                    <em><i class="i1"></i><a href="home/category?wd=茶" target="_blank">国产茶</a></em>
+                    <em><i class="i2"></i><a href="home/category?wd=茶" target="_blank">进口茶</a></em>
+                    <em><i class="i3"></i><a href="home/category?wd=茶" target="_blank">冲调饮品</a></em></p></div>
+                <div class="FruitVegtxt cylftxt clear">
+                    <div class="left">
+                        <h3><a href="/product-6803.aspx" target="_blank">特级狗牯脑绿茶</a>  >></h3>
+                        <p><em><a href="/category-381.aspx" target="_blank">红茶</a></em><em><a href="/category-599.aspx" target="_blank">乌龙茶</a></em>
+                        <em><a href="/category-382.aspx" target="_blank">花果茶</a></em>
+                        <em><a href="/category-602.aspx" target="_blank">进口绿茶</a></em>
+                        <em><a href="/category-383.aspx" target="_blank">保健茶</a></em>
+                        <em><a href="/category.aspx?wd=%E6%99%AE%E6%B4%B1%E8%8C%B6" target="_blank">普洱茶</a></em></p>
+                    </div>
+                    <div class="left">
+                        <h3><a href="/product-6331.aspx" target="_blank">庐山云雾红茶</a>   >></h3>
+                        <p><em><a href="/category-388.aspx" target="_blank">芝麻糊</a></em>
+                        <em><a href="/category-395.aspx" target="_blank">速溶茶</a></em>
+                        <em><a href="/category-389.aspx" target="_blank">核桃粉</a></em>
+                        <em><a href="/category-397.aspx" target="_blank">豆奶粉</a></em>
+                        <em><a href="/category-667.aspx" target="_blank">纯牛奶</a></em>
+                        <em><a href="/category-666.aspx" target="_blank">婴儿奶粉</a></em></p>
+                    </div>
+                </div>
+                <div class="botp clear"><a href="home/item?id=34" target="_blank"><img src="__ROOT__/Upload/product/201605261614359756.jpg" alt="武夷山金骏眉红茶"/></a></div>
+            </div>
+            <div class="FruitVegrt right">
+                <ul>
+                    <li class="lbig">
+         				<foreach name='cy2' item='chaye2'>
+         				<eq name="key" value="1">
+         				   <div id="slideBox" class="slideBox botp slidepic1">
+                            <div class="hd"><em>1</em></div>
+						<div class="bd"></eq>
+                        <p <eq name="key" value="2">class="botp"</eq>>
+                        <a href="home/item?id={$chaye2.p_id}" target="_blank"><img src="__ROOT__{$chaye2.thumb}" alt="斯里兰卡红茶"/></a></p>
+                    <eq name="key" value="1">
+                    	</div></div>
+                    </eq>
+                    </foreach>
+                    </li>
+                   <!--第三层-->
+                    <li>
+       				<foreach name='cy3' item='chaye3'>
+        <p <neq name="key" value="0">class="botp"</neq>>
+        <a href="home/item?id={$chaye3.p_id}" target="_blank"><img src="__ROOT__{$chaye3.thumb}" alt="庐山云雾茶"/></a>
+        </p>
+                    </foreach>
+                    </li>
+                    <li>
+					<foreach name="cy4" item="chaye4">
+                         <p <neq name="key" value="0">class="botp"</neq>>
+                        <a href="home/item?id={$chaye4.p_id}" target="_blank"><img src="__ROOT__{$chaye4.thumb}" alt="小粒咖啡（混）"/></a>
+                        </p>
+                    </foreach>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear0"></div>
+        </div>
+        <!--<div class="brand clear">
+            <ul>
+                <li><a href="/member/Ads_click_Mamage.aspx?id=7212&page=%23" target="_blank"><img src="__ROOT__/Upload/product/201605231454474502.jpg" alt=""/></a></li>
+                <li><a href="/member/Ads_click_Mamage.aspx?id=7213&page=%23" target="_blank"><img src="__ROOT__/Upload/product/201605231456091539.jpg" alt=""/></a></li>
+                <li><a href="/member/Ads_click_Mamage.aspx?id=7214&page=%23" target="_blank"><img src="__ROOT__/Upload/product/201605231457045590.jpg" alt=""/></a></li>
+                <li><a href="/member/Ads_click_Mamage.aspx?id=7215&page=http%3a%2f%2f" target="_blank"><img src="__ROOT__/Upload/product/201605231457454654.jpg" alt=""/></a></li>
+                <li><a href="/member/Ads_click_Mamage.aspx?id=7216&page=%23" target="_blank"><img src="__ROOT__/Upload/product/201605231458313380.jpg" alt=""/></a></li>
+                <li><a href="/member/Ads_click_Mamage.aspx?id=7217&page=%23" target="_blank"><img src="__ROOT__/Upload/product/201605231459102062.jpg" alt=""/></a></li>
+                <li><a href="/member/Ads_click_Mamage.aspx?id=7218&page=%23" target="_blank"><img src="__ROOT__/Upload/product/201605231500002101.jpg" alt=""/></a></li>
+            </ul>
+        </div>-->
+    </div>
+    <!--茶叶冲饮结束-->
+
+  
+
+
+    
+
+
+    <div class="wrap ads clear"><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605261836461755.jpg" alt=""/></a></div>
+    <div class="wrap clear">
+        <div class="inews inewsr left">
+            <div class="titn clear"><a class="right" href="#">更多＞＞</a><i class="i1"></i><b>营养课堂</b></div>
+            <div class="clear">
+                <img class="inewspic left" src="__ROOT__/Public/images/Home/npic.jpg" width="175" height="102" />
+                <ul class="inewsmd inewstxt right">
+                    
+                    <li>
+                        <a href="#" title="你所不知道的鸡西特产有哪些呢？" target="_blank">你所不知道的鸡西特产有哪些呢？</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" title="绥化特产美食，带给你不一样的东北风味" target="_blank">绥化特产美食，带给你不一样的东北风</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" title="物阜民丰焕然一新，当然少不了美味的阜新特产小吃！" target="_blank">物阜民丰焕然一新，当然少不了美味的</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" title="关外上海的惬意生活怎少的了营口特产！" target="_blank">关外上海的惬意生活怎少的了营口特产</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="inews left">
+            <div class="titn clear"><a class="right">更多＞＞</a><i class="i2"></i><b>资讯</b></div>
+            <ul class="inewsmd">
+                
+                <li>
+                    <a>两分钟内切整个菠萝，这方法太好用!</a>
+                </li>
+                
+                <li>
+                    <a>我和你缠缠绵绵，丝丝入味</a>
+                </li>
+                
+                <li>
+                    <a>4款春季减肥食品 多吃不胖</a>
+                </li>
+                
+                <li>
+                    <a>豆浆的5大误解，你上当没？</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="inews right">
+            <div class="titn clear"><a class="refresh right" href="#">换一换</a><i class="i3"></i><b>商家推荐</b></div>
+            <div class="malllogo clear">
+                <ul>
+                    <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301747173161.jpg" alt=""/></a></li>
+                    <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301748087520.jpg" alt=""/></a></li>
+                    <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301749031702.jpg" alt=""/></a></li>
+                    <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301749582723.jpg" alt=""/></a></li>
+                    <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301750312272.jpg" alt=""/></a></li>
+                    <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301751292385.jpg" alt=""/></a></li>
+                    <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301752157742.jpg" alt=""/></a></li>
+                    <li><a href="#" target="_blank"><img src="__ROOT__/Upload/product/201605301747024973.jpg" alt=""/></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear0"></div>
+    </div>
+<!--底部开始-->
+<include file="public:footer"/>

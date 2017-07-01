@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>已买到的商品 - 土购网</title>
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/css/Home/index.css"/>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/lhgdialog.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/public.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/order.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".sider li").eq(1).find("a").addClass("aon")
+        $(".nav li").eq(0).addClass("aons");
+    })
+</script>
+</head>
+<body>
+<!--头部开始-->
+<div class="top">
+ <div class="top">
+  <div class="top_pc wrap">
+    <ul class="right">
+      <li><a href="/" class="red">土购网首页</a></li>
+      <li><a class="drop" href="/user/">我的土购</a>
+        <ul style="display:none; ">
+          <li><a href="/user/order.aspx">我的订单</a></li>
+          <li><a href="/user/collect.aspx">我的收藏</a></li>
+        </ul>
+      </li>
+      <li>
+          <a href="/cart.aspx">购物车 <font id="cart_count"></font></a>
+          <script type="text/javascript">
+              $(function () {
+                  $.ajax({
+                      type: "post",
+                      dataType: "json",
+                      url: "/Tools/submit_ajax.ashx?action=get_cart_count",
+                      success: function (d) {
+                          $("#cart_count").html(d.msg);
+                      }
+                  })
+              })
+          </script>
+      </li>
+      <li><a href="/seller/">卖家中心</a></li>
+      <li>
+      <a class="drop" href="javascript:">帮助中心</a>
+        <ul style="display:none; ">
+          <li><a target="_blank" href="/help-161.aspx">订购流程</a></li>
+          <li><a target="_blank" href="/help-162.aspx">免费注册</a></li>
+          <li><a target="_blank" href="/help-166.aspx">密码修改</a></li>
+        </ul>
+      </li>
+      <li><a>电话：400-800-2923</a></li>
+      <li><a class="drop" href="javascript:">网站导航</a>
+        <ul style="display:none; ">
+          <li><a href="/news.aspx">土购网资讯</a></li>
+          <li><a href="/company.aspx">企业黄页</a></li>
+          <li><a href="/supply.aspx">供求信息</a></li>
+          <li><a href="/health.aspx">土产与健康</a></li>
+        </ul>
+      </li>
+      <li><a href="javascript:;" onmouseover="$('.sa').show()" onmouseout="$('.sa').hide()" style="position:relative;" target="_blank">微信<img class="sa" style="position:absolute; top:22px; left:-60px; z-index:120000; display:none;" src="/images/qrcode.jpg" /></a></li>
+      <li><a class="sina_weibo" title="关注土购网微博" target="_blank" href="http://weibo.com/tugoo" rel="nofollow">关注土购网微博</a></li>
+    </ul>
+    <em id="login_str">
+        <!--{logoutStr}-->
+        <script type="text/javascript">
+            $(function () {
+                $.ajax({
+                    type: "post",
+                    dataType: "json",
+                    url: "/Tools/submit_ajax.ashx?action=get_login_str",
+                    success: function (d) {
+                        $("#login_str").html(d.msg);
+                    }
+                })
+            })
+        </script>
+    </em>
+  </div>
+</div>
+
+<div class="wrap clear">
+    <div class="logo left"><a href="#"><img src="images/logo.png" height="40" title="" alt=""/></a></div>
+    <div class="nav left">
+      <ul>
+        <li><a href="/user">首页</a></li>
+        <li><a href="account.aspx">帐户设置</a></li>
+        <li><a href="message.aspx">消息</a></li>
+        <li><a href="/seller/">卖家中心</a></li>
+      </ul>
+    </div>
+    <!--搜索开始-->
+    <div class="search right">
+      <div class="search1">
+        <!--下拉框-->
+        <div class="selectwrap" onclick="sodis();" onmouseout="hideso();">
+          <input type="hidden" id="searchtype" name="searchtype" value="0"/>
+          <div id="selectvalue">商品</div>
+          <div id="options" style="display:none;overflow:hidden;" onmouseout="hideso();" onmouseover="showso();">
+            <a href="javascript:void(0);" onclick="setselect('0','商品');">商品</a>
+            <a href="javascript:void(0);" onclick="setselect('1','店铺');">店铺</a>
+            <a href="javascript:void(0);" onclick="setselect('2','资讯');">资讯</a>
+            <a href="javascript:void(0);" onclick="setselect('3','供求');">供求</a>
+            <a href="javascript:void(0);" onclick="setselect('4','黄页');">黄页</a>
+          </div>
+        </div>
+        <!--搜索框-->
+        <div class="keyword"><input type="text" name="searchword" id="searchword" value='请输入搜索信息' onBlur="if(this.value=='') this.value='请输入搜索信息';" onFocus="if(this.value=='请输入搜索信息') this.value='';" onkeydown="if(event.keyCode==13){search();return false};" /></div>
+        <!--搜索按钮-->
+        <div class="search_btn"><button type="button" onclick="search()"></button></div>
+        <script type="text/javascript">
+            $(function () {
+                var url = window.location.href;
+                if (url.indexOf("category") >= 0) {
+                    setselect(0, "商品");
+                }
+                else if (url.indexOf("shop.aspx") >= 0) {
+                    setselect(1, "店铺");
+                }
+                else if (url.indexOf("news") >= 0) {
+                    setselect(2, "资讯");
+                }
+                else if (url.indexOf("supply") >= 0) {
+                    setselect(3, "供求");
+                }
+                else if (url.indexOf("company") >= 0) {
+                    setselect(4, "黄页");
+                }
+                else {
+                    setselect(0, "商品");
+                }
+            })
+
+            function setselect(sval, ihtml) {
+                document.getElementById("selectvalue").innerHTML = ihtml;
+                document.getElementById("searchtype").value = sval;
+            }
+            function sodis() {
+                if (document.getElementById("options").style.display == "none") {
+                    document.getElementById("options").style.display = "block";
+                } else {
+                    document.getElementById("options").style.display = "none";
+                }
+            }
+            function showso() { document.getElementById("options").style.display = "block"; }
+            function hideso() { document.getElementById("options").style.display = "none"; }
+
+            function search() {
+                searchtype = document.getElementById("searchtype").value;
+                word = document.getElementById("searchword").value;
+                word = (word == "请输入搜索信息") ? "" : word;
+                switch (searchtype) {
+                    case "0":
+                        parent.location.href = "/category.aspx?wd=" + encodeURI(word);
+                        break;
+                    case "1":
+                        parent.location.href = "/shop.aspx?wd=" + encodeURI(word);
+                        break;
+                    case "2":
+                        parent.location.href = "/news.aspx?wd=" + encodeURI(word);
+                        break;
+                    case "3":
+                        parent.location.href = "/supply.aspx?wd=" + encodeURI(word);
+                        break;
+                    case "4":
+                        parent.location.href = "/company.aspx?wd=" + encodeURI(word);
+                        break;
+                    default:
+                        parent.location.href = "/category.aspx?wd=" + encodeURI(word);
+                        break;
+                }
+            }
+      </script>
+      </div> 
+    </div>
+    <!--搜索结束-->
+    <div class="clear0"></div>
+  </div>
+</div>
+
+</div>
+<!--头部结束-->
+
+<!--主体开始-->
+<form id="form1" name="form1">
+<div class="center clear">
+  <div class="sider left">
+  <h2><img src="images/buy.jpg" width="40" height="40" align="absmiddle" />买家中心管理</h2>
+<div class="sider1 clear">
+  <ul>
+    <li><a href="/cart.aspx" target="_blank">我的购物车</a></li>
+    <li><a href="order.aspx">已买到的商品</a></li>
+    <li><a href="collect.aspx">收藏夹</a></li>
+    <li><a href="comment.aspx">评价管理</a></li>
+    <li><a href="voucher.aspx">我的优惠券</a></li>
+    <li>
+        <dl>
+        <dt><a class="a1" href="javascript:">退款维权</a></dt>
+        <dd>
+            <ul>
+            <li><a href="refund.aspx">退款退货管理</a></li>
+            <li><a href="javascript:" style="color:#ccc;">售后管理(敬请期待)</a></li>
+            <li><a href="javascript:" style="color:#ccc;">投诉管理(敬请期待)</a></li>
+            </ul>
+        </dd>
+        </dl>
+    </li>
+    <li>
+        <dl>
+        <dt><a class="a1" href="javascript:">顾客中心</a></dt>
+        <dd>
+            <ul>
+            <li><a href="pay.aspx">提现账户</a></li>
+            <li><a href="openshop.aspx">店铺申请</a></li>
+            <!--<li><a href="applyagent.aspx">代理申请</a></li>-->
+            </ul>
+        </dd>
+        </dl>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class="cenrt right">
+    <div class="OrderStatus clear">
+      <ul>
+        <li class="lion"><a href="order.aspx">所有订单<span></span></a></li>
+        <li ><a href="order.aspx?statusid=0">待付款<em>2</em><span></span></a></li>
+        <li ><a href="order.aspx?statusid=1">待发货<em>0</em><span></span></a></li>
+        <li ><a href="order.aspx?statusid=2">待收货<em>0</em><span></span></a></li>
+        <li ><a href="order.aspx?evatatus=0">待评价<em>0</em><span></span></a></li>
+        <li class="last"><a href="order_recycle.aspx">订单回收站</a></li>
+      </ul>
+    </div>
+    
+    <table width="100%" class="orderlist" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr class="colname1">
+          <th class="leftb">商品</th>
+          <th width="90">单价(元)</th>
+          <th width="45">数量</th>
+          <th width="108">商品操作</th>
+          <th width="108">实付款(元)</th>
+          <th width="88">
+            <select onchange="javascript:location.href=this.options[this.selectedIndex].value">
+              <option value="order.aspx">订单状态</option>
+              <option value="order.aspx?statusid=0" >待买家付款</option>
+              <option value="order.aspx?statusid=1" >待卖家发货</option>
+              <option value="order.aspx?statusid=2" >待确认收货</option>
+              <option value="order.aspx?evatatus=0" >待评价</option>
+            </select>
+          </th>
+          <th class="rightb" width="108">交易操作</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr class="sep_row"><td colspan="7"></td></tr>
+        <tr>
+          <td colspan="7">
+            <div class="ordtop ordtopc">
+              <label class="left"><input class="mart inpt" type="checkbox" onclick="checkAll(this)"/>全选</label>
+              <p><a href="javascript:" onclick="ajax_submit('order','order_Merge_batch','form1')">订单合并付款</a></p>
+              <p><a href="javascript:" onclick="ajax_submit('order','order_confirm_batch','form1')">批量确认收货</a></p>
+              <div class="ordtop_page">
+                <span class="span1">1/1</span><a class="prev disabled">上一页</a><a class="next disabled">下一页</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      
+      <tbody>
+        <tr class="sep_row"><td colspan="7"></td></tr>
+        <tr class="first">
+          <td colspan="7">
+            <em></em>
+            <span><input class="inpt checkall" name="chkNumber" value="17040816395499811335" type="checkbox"  /></span>
+            <span class="dealtime">2017-04-08</span>
+            <span>订单号：17040816395499811335</span>
+            <span><a class="shopname" href="/Shop1335/index.aspx" target="_blank">杨西电商服务站</a></span>
+          </td>
+        </tr>
+        <tr class="order_pd" >
+          <td class="border0" colspan="4">
+            
+            <table width="100%" class="order_pd_tbl" cellpadding="0" cellspacing="0">
+
+                
+
+              <tr>
+                <td class="goods">
+                  <a href="/product-9652.aspx" target="_blank" class="pic"><img src="/UploadFile/product/1335/201703201519273565_100_100.jpg"></a>
+                  <div class="goods_desc"><a href="/product-9652.aspx" target="_blank">南康友家月亮花生巴30g-</a></div>
+                </td>
+                <td width="90" class="price">1.90</td>
+                <td width="45">1</td>
+                <td width="108"></td>
+              </tr>
+                
+            </table>
+            
+          </td>
+          <td class="border1 real_price">13.90<font>(含运费：12.00)</font></td>
+          <td class="border1"><a href="order_show.aspx?number=17040816395499811335" target="_blank">待付款</a><a href="order_show.aspx?number=17040816395499811335" target="_blank">订单详情</a></td>
+          <td class="border2 borderbut"><a class="a1" href="/order_shop_payment.aspx?id=17040816395499811335" target="_blank">立即付款</a><a href="javascript:;" onclick="ajax_post('order','order_cancel','17040816395499811335')">取消订单</a></td>
+        </tr>
+      </tbody>
+      
+      <tbody>
+        <tr class="sep_row"><td colspan="7"></td></tr>
+        <tr class="first">
+          <td colspan="7">
+            <em></em>
+            <span><input class="inpt checkall" name="chkNumber" value="1704081553482103289" type="checkbox"  /></span>
+            <span class="dealtime">2017-04-08</span>
+            <span>订单号：1704081553482103289</span>
+            <span><a class="shopname" href="/Shop289/index.aspx" target="_blank">海博农业</a></span>
+          </td>
+        </tr>
+        <tr class="order_pd" >
+          <td class="border0" colspan="4">
+            
+            <table width="100%" class="order_pd_tbl" cellpadding="0" cellspacing="0">
+
+                
+
+              <tr>
+                <td class="goods">
+                  <a href="/product-6284.aspx" target="_blank" class="pic"><img src="/UploadFile/product/289/201510200920558510_100_100.jpg"></a>
+                  <div class="goods_desc"><a href="/product-6284.aspx" target="_blank">牡丹亭 坚果 炒货 1/1多味花生 休闲零食 100g-默认规格</a></div>
+                </td>
+                <td width="90" class="price">3.20</td>
+                <td width="45">1</td>
+                <td width="108"></td>
+              </tr>
+                
+            </table>
+            
+          </td>
+          <td class="border1 real_price">8.20<font>(含运费：5.00)</font></td>
+          <td class="border1"><a href="order_show.aspx?number=1704081553482103289" target="_blank">待付款</a><a href="order_show.aspx?number=1704081553482103289" target="_blank">订单详情</a></td>
+          <td class="border2 borderbut"><a class="a1" href="/order_shop_payment.aspx?id=1704081553482103289" target="_blank">立即付款</a><a href="javascript:;" onclick="ajax_post('order','order_cancel','1704081553482103289')">取消订单</a></td>
+        </tr>
+      </tbody>
+      
+    </table>
+    
+    <div class="ordtop ordtopc" style=" height:30px;">
+      <label class="left"><input class="mart inpt" type="checkbox" onclick="checkAll(this)"/>全选</label>
+      <p><a href="javascript:" onclick="ajax_submit('order','order_confirm_batch','form1')">批量确认收货</a></p>
+      <div class="page right"><span>共2记录</span><a class="prev disabled">上一页</a><a class="on">1</a><a class="next disabled">下一页</a></div>
+    </div>
+    
+  </div>
+  <div class="clear0"></div>
+</div>
+</form>
+<!--主体结束-->
+
+<!--底部开始-->
+<div class="service clear">
+    <div class="servicec wrap">
+        <dl class="fore1">
+            <dt>新手指南</dt>
+            <b></b>
+            <dd>
+                <p><a href="/help-162.aspx" target="_blank">免费注册</a></p><p><a href="/help-166.aspx" target="_blank">密码修改</a></p><p><a href="/help-161.aspx" target="_blank">订购流程</a></p><p><a href="/help-185.aspx" target="_blank">忘记密码</a></p>
+            </dd>
+        </dl>
+
+        <dl class="fore2">
+            <dt>消费者保障</dt>
+            <b></b>
+            <dd>
+                <p><a href="/baozhang.aspx" target="_blank">7天无理由退货</a></p>
+                <p><a href="/help-173.aspx" target="_blank">食品安全承诺</a></p><p><a href="/help-168.aspx" target="_blank">买家防骗</a></p>
+            </dd>
+        </dl>
+
+        <dl class="fore3">
+            <dt>配送方式</dt>
+            <b></b>
+            <dd>
+                <p><a href="/help-171.aspx" target="_blank">卖家防骗</a></p><p><a href="/help-170.aspx" target="_blank">配送与运费</a></p><p><a href="/help-187.aspx" target="_blank">土购网默认运费</a></p>
+            </dd>
+        </dl>
+
+        <dl class="fore4">
+            <dt>售后服务</dt>
+            <b></b>
+            <dd>
+                <p><a href="/help-175.aspx" target="_blank">验货签收</a></p><p><a href="/help-174.aspx" target="_blank">退换须知</a></p><p><a href="/help-182.aspx" target="_blank">投诉中心</a></p>
+            </dd>
+        </dl>
+
+        <div class="foot_weixin">
+            <b>土购网微信公众号</b><img src="/template/platform_default/images/index/1t.jpg" width="100" height="100" /><span>扫一扫，关注有礼</span>
+        </div>
+
+        <div class="clear0"></div>
+    </div>
+</div>
+
+<div class="foot clear">
+  <p><a href="/about.aspx?wd=privacy" target="_blank">隐私声明</a><a>|</a><a href="/about.aspx?wd=service" target="_blank">服务条款</a><a>|</a><a href="/about.aspx?wd=ad" target="_blank">广告服务</a><a>|</a><a href="/about.aspx?wd=job" target="_blank">招贤纳士</a><a>|</a><a href="/about.aspx?wd=welcome" target="_blank">欢迎合作</a><a>|</a><a href="/about.aspx?wd=contact" target="_blank">联系我们</a><a>|</a><a href="/about.aspx?wd=license" target="_blank">经营许可证</a></p>
+  <p>地址：赣州市章贡区兴国路65号总部经济大楼6楼、14楼。&nbsp;&nbsp;联系电话：0797-8220738 0797-8220735&nbsp;&nbsp;传真号：0797-8220736 </p>
+  <p>客服QQ:3064244831(<a href="http://wpa.qq.com/msgrd?v=3&uin=3064244831&site=qq&menu=yes" target="_blank" class="red">点击咨询</a>)&nbsp;&nbsp;
+      2075263211(<a href="http://wpa.qq.com/msgrd?v=3&uin=2075263211&site=qq&menu=yes" target="_blank" class="red">点击咨询</a>)&nbsp;&nbsp;
+      2964470844(<a href="http://wpa.qq.com/msgrd?v=3&uin=2964470844&site=qq&menu=yes" target="_blank" class="red">点击咨询</a>)&nbsp;&nbsp;
+      2107213547(<a href="http://wpa.qq.com/msgrd?v=3&uin=2107213547&site=qq&menu=yes" target="_blank" class="red">点击咨询</a>)&nbsp;&nbsp; 
+     土购QQ群：227556748<a target="_blank" rel="nofollow" href="http://shang.qq.com/wpa/qunwpa?idkey=dba3c6e28bd4ee5d4cdae99f84ce2a843c04b997a0d20a3cbd64fe2f0d0a82c2"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="江西土特产交流群" title="江西土特产交流群" /></a></p>
+  <p>增值电信业务经营许可证赣B2-2012052&nbsp;&nbsp;赣ICP备12003095-2号&nbsp;&nbsp;Copyright 2013-2015&nbsp;&nbsp;版权所有 tugoo.net</p>
+  <p><img src="/template/platform_default/images/index/zfb.jpg"/><a href="http://union.xns315.com/lm/xns017341.html" rel="nofollow" target="_blank" alt="中国农业网站诚信联盟"><img src="/template/platform_default/images/index/xns315.gif"/></a><a href="/about.aspx?wd=zhengshu" rel="nofollow" target="_blank"><img src="/template/platform_default/images/index/baiqiang.gif" alt="中国农业百强网站"/></a></p>
+    <div class="hidden">
+	<script type="text/javascript">
+	    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fcef4671349fac47e4ecca66da503f015' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    </div>
+</div>
+
+
+<!--底部结束-->
+</body>
+</html>

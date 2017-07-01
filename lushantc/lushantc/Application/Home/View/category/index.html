@@ -1,0 +1,93 @@
+<include file='public:header'/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="__ROOT__/Public/js/Home/product.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/lhgdialog/lhgdialog.js?skin=idialog"></script>
+<!--切换热门开始-->
+<div class="wrap clear">
+  <div class="location clear">您所在的位置：<a href="/">庐山特产网</a><em>&gt;</em><a href="">产品中心</a> > 特产分类</div>
+<include file='public:left'/>  
+
+  <div class="prolsrt right">
+    <div class="classify clear">
+        <div class="ch_cons clear">
+</div>
+    </div>
+    <div class="list_sort margin10 clear">
+      <div class="list_sortA">
+        <ul>
+          <li class='on'><a href="javascript::void(0);">全部</a></li>
+
+        </ul>
+        
+      </div>
+      <div class="list_sortB clear">
+        <ul class="ullf">
+          <li class='<if condition="!isset($get['order'])">on</if>'><a href="?wd={$zz}" class='<if condition="!isset($get['order'])">desc</if>'>默认</a></li>
+          <li class='<if condition="isset($get['order']) && $get['order'] == 'sale_num'">on</if>'><a href="?wd={$zz}&order=sale_num&sort=<if condition="isset($get['sort']) && $get['sort']=='desc' && $get['order']=='sale_num'">asc"  class='desc'<else/>desc"   class='asc'</if>>销量</a></li>
+          <li class='<if condition="isset($get['order']) && $get['order'] == 'price'">on</if>'><a href="?wd={$zz}&order=price&sort=<if condition="isset($get['sort']) && $get['sort']=='desc' && $get['order']=='price'">asc"   class='desc'<else/>desc"  class='asc'</if>>价格</a></li>
+          
+          <!-- <li class=''><a href="?wd={$zz}" class=''>最新</a></li> -->
+        </ul>
+        <div class="pig_pic">大图</div>
+       
+       
+        <script type="text/javascript">
+            $(function () {
+                var url = window.location.href; 
+                url = url.replace(/&page=(\w+)/g, '');		//获取当前url  
+                $(".choose").hover(function () { $(".choose dl").show(); }, function () { $(".choose dl").hide(); })
+                $("input[name='free']").click(function () {
+                    var freeurl = '?id=0?type=0?order=?wd={$zz}';
+                    if ($(this).prop("checked") == true) {
+                        window.location.href = freeurl + '&free=1';
+                    } else {
+                        window.location.href = freeurl + '&free=0';
+                    }
+                })
+            })
+        </script>
+      </div>
+    </div>
+    <div class="product clear margin10">
+    <if condition="count($wds) gt 0">
+      <ul>
+        <foreach name='wds' item='wd1'>
+        <li>
+          <div class="pic"><a href="#" target="_blank"><img src="__ROOT__{$wd1.thumb}" alt="{$wd1.p_name}" width="203" height="203" /></a></div>
+          <div class="infor">
+            <span><a href="#" title="{$wd1.p_name}" target="_blank">{$wd1.p_name}</a></span>
+            <p>
+                <em>¥{$wd1.price}</em> / 件</p>
+          </div>
+          <div class="infor1">
+            <p class="inforc"><!--评价：<b></b>人气：0--></p>
+            <div class="buts"><a storage="{$wd1.stock}"  onclick="cart_quick(this,{$wd1.p_id})" class="a1">加入购物车</a></div>
+          </div>
+        </li>
+        </foreach>
+        <else/>
+        <center><span style="color:red;font-size:16px;">没有查到记录</span></center>
+        </if>
+        
+        <div class="clear0"></div>
+      </ul>
+    </div>
+    <center></center><div class="Pagination" >
+    {$page}
+    </div>
+<style type="text/css">
+.Pagination a:hover,.current{background-color: #f54281;border: 1px solid #f54281;color: #ffffff; }
+.Pagination{float: right;height: auto;_height: 45px; line-height: 20px;margin-right: 15px;_margin-right: 5px; color:#565656;margin-top: 10px;_margin-top: 20px; clear:both;}
+.Pagination a,.Pagination span{ font-size: 14px;text-decoration: none;display: block;float: left;color: #565656;border: 1px solid #ccc;height: 34px;line-height: 34px;margin: 0 2px;width: 34px;text-align: center;}  
+ </style> 
+</div>
+
+  <div class="clear0"></div>
+</div>
+<!--切换热门结束-->
+
+<include file='public:footer'/>
+<!--底部结束-->
+</body>
+</html>

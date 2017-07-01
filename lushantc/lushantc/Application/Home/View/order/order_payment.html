@@ -1,0 +1,90 @@
+<include file="Public/header" />
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/css/Home/cart.css"/>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/lhgdialog.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/cart.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/common.js"></script>
+     <script type="text/javascript" src="__ROOT__/Public/js/Home/zDrag.js"></script>
+<script type="text/javascript" src="/template/platform_default/js/zDialog.js"></script>
+<script type="text/javascript">
+$(function () {
+    $(".navl ul li").eq(0).find("a").addClass("on");
+})
+function setTab(name, cursel, n) {
+    for (i = 1; i <= n; i++) {
+        var menu = document.getElementById(name + i);
+        var con = document.getElementById("con_" + name + "_" + i);
+        menu.className = i == cursel ? "active" : "";
+        con.style.display = i == cursel ? "block" : "none";
+    }
+}
+
+function open5() {
+    var diag = new Dialog();
+    diag.Width = 400;
+    diag.Height = 180;
+    diag.Title = "请选择支付结果";
+    diag.InvokeElementId = "forlogin"
+    diag.show();
+
+}
+function fun2() {
+    parentDialog.close();
+}
+</script>
+
+<div id="forlogin" style="display:none">
+<a href="/user/order.aspx" target="" class="kj">支付完成(返回订单)</a><a href="javascript:void(0)" onclick="Dialog.getInstance('0').close();" class="kj">支付失败(继续支付)</a>
+</div>
+<!--购物车开始-->
+<div class="ShopCart">
+  <form id="form1" method="post" action="/order_payment.aspx?id=1704081540278234&action=submit" target="_blank">
+  <input type="hidden" id="price" value="13.30"/>
+  <div class="ordeoj">
+    <h2><a href="/user">查看订单状态</a>订单已提交，请尽快付款！</h2>
+    <h3>您的订单{$p.sn}总金额：<font class="red">{$p.total}</font><span>您的订单已生效，可以选择以下支付方式完成订单。</span></h3>
+  </div>
+   
+  <div class="ordertotal">
+    
+      
+  </div>
+  <div class="cnext">还差一步，请立即支付：</div>
+  <div class="bankcom bankpay">
+    <div class="abanktp" style="display:">
+      <h2>支付平台：</h2>
+      <ul>
+       <!-- <li class="active" id="one1"><input  id="chk_baofoo" class="inputwz" checked="checked"  type="radio" name="payment" value="Bank_CCB" /><label for="chk_baofoo"><img src="/template/platform_default/images/bank/tzf.jpg" alt="土支付" /></label></li>-->
+        <li id="one1"><input id="chk_alipay" class="inputwz" type="radio" checked name="payment" value="alipay" /><label for="chk_alipay"><img src="__ROOT__/Public/images/Home/Alipay.jpg" alt="支付宝" /></label></li>
+        <li id="one2"><input id="chk_weixin" class="inputwz"  type="radio" name="payment" value="weixin" /><label for="chk_weixin"><img src="__ROOT__/Public/images/Home/weixin.jpg" alt="微信支付" /></label></li>
+      </ul>
+    </div>
+    <div class="bankcombt" style="display:">
+      <div id="con_one_1">
+       <h2>储蓄卡支付：</h2>
+      <ul>
+        <li><input class="inputwzb" type="radio" id="CCB" name="payment" value="CCB"/><label for="CCB"><span class="CCB"></span></label></li>
+        <li><input class="inputwzb" type="radio" id="ICBCB2C" name="payment" value="ICBCB2C" /><label for="ICBCB2C"><span class="ICBCB2C"></span></label></li>
+        <li><input class="inputwzb" type="radio" id="BOCB2C" name="payment" value="BOCB2C"/><label for="BOCB2C"><span class="BOCB2C"></span></label></li>
+        <li><input class="inputwzb" type="radio" id="ABC" name="payment" value="ABC" /><label for="ABC"><span class="ABC"></span></label></li>
+        <li><input class="inputwzb" type="radio" id="COMM" name="payment" value="COMM" /><label for="COMM"><span class="COMM"></span></label></li>
+        <li><input class="inputwzb" type="radio" id="SPDB" name="payment" value="SPDB" /><label for="SPDB"><span class="SPDB"></span></label></li>
+        <li><input class="inputwzb" type="radio" id="CMB" name="payment" value="CMB" /><label for="CMB"><span class="CMB"></span></label></li>
+        <li><input class="inputwzb" type="radio" id="CMBC" name="payment" value="CMBC" /><label for="CMBC"><span class="CMBC"></span></label></li>
+        <li><input class="inputwzb" type="radio" id="CIB" name="payment" value="CIB"/><label for="CIB"><span class="CIB"></span></label></li>
+        <li><input class="inputwzb" type="radio" id="CEBBANK" name="payment" value="CEBBANK" /><label for="CEBBANK"><span class="CEBBANK"></span></label></li>
+        <li><input class="inputwzb" type="radio" id="POSTGC" name="payment" value="POSTGC" /><label for="POSTGC"><span class="POSTGC"></span></label></li>
+        <div class="clear"></div>
+      </ul>
+      </div>
+      <div id="con_one_2" style="display:none"></div>
+      <div id="con_one_3" style="display:none"></div>
+       
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="paybuts clear"><input id="btn_submit" type="submit" onclick="open5()" value="确认支付" class="cartbut" style="border:none;"/></div>
+  </form>
+</div>
+<!--购物车结束-->
+<include file="Public/footer" />

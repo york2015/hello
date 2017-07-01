@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="特产,土特产,农产品,庐山特产网" name="keywords" />
+<meta content="庐山特产网（lushantc.com)-专业的农土特产网上购物商城，专注在线销售农产品、土特产行业数万个品牌和类种的优质商品，品质保证、服务放心，便捷、诚信的服务为您提供愉悦的网上商城购物体验！" name="description" />
+<meta name="title" content="庐山特产网" />
+<meta name="author" content="庐山特产网" />
+<meta name="renderer" content="webkit|ie-comp|ie-stand" />
+<title>庐山特产网-专业的农产品、土特产网上购物商城</title>
+ <link rel="stylesheet" type="text/css" href="__ROOT__/Public/css/Home/2016new.css" />
+ <link rel="stylesheet" type="text/css" href="__ROOT__/Public/css/Home/product.css" />
+<script type="text/javascript" src="__ROOT__/Public/tools/browser_redirect.ashx"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/product.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/common.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/common.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/flexislider.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/jquery/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="__ROOT__/Public/js/Home/jquery.SuperSlide.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(".banner").flexislider();
+        $(".navl ul li").eq(0).find("a").addClass("on");
+        $("img.lazy").lazyload({ effect: "fadeIn" });
+    })
+</script>
+<!--[if IE 6]>
+    <script type="text/javascript" src="/template/platform_default/js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix( '*');
+    </script>
+<![endif]-->
+</head>
+<body>
+
+    
+<!--头部开始-->
+<!--[if IE 6]>
+    <script type="text/javascript" src="__ROOT__/Public/js/DD_belatedPNG.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix( '*');
+    </script>
+<![endif]-->
+
+<script type="text/javascript">
+    function setselect(sval, ihtml) {
+        $("#selectvalue").html(ihtml);
+        $("#searchtype").val(sval);
+    }
+    function sodis() {
+        if (document.getElementById("options").style.display == "none") {
+            document.getElementById("options").style.display = "block";
+        } else {
+            document.getElementById("options").style.display = "none";
+        }
+    }
+    function showso() { document.getElementById("options").style.display = "block"; }
+    function hideso() { document.getElementById("options").style.display = "none"; }
+</script>
+
+<div class="tugoobar">
+    <ul class="tugoobarc">
+        <li class="cspic"><a href="#"><img src="__ROOT__/Public/images/Home/peo.png" /></a></li>
+        <li class="lmd"><a href="{:U('Home/Cart/index')}"><img src="__ROOT__/Public/images/Home/cart.png" /><span>购<br />物<br />车</span></a></li>
+        <li class="cspic"><a href="/user/collect.aspx"><img src="__ROOT__/Public/images/Home/col.png" /></a></li>
+    </ul>
+    <ul class="tugoobarc1">
+        <li><a href="tencent://message/?uin=2281917160&amp;Site=&amp;Menu=yes" onclick="return true;mechatClick()"><img src="__ROOT__/Public/images/Home/kf.png" /><span>客<br />服</span></a></li>
+        <li class="gotop"><a href="javascript:void(0);" class="ewm"><em><img src="__ROOT__/Public/images/Home/ewm.png" /></em></a></li>
+    </ul>
+</div>
+
+<!--头部开始-->
+
+<div class="top">
+    <div class="top_pc wrap">
+        <ul class="right">
+            <if condition="$_SESSION['user_id']">
+            <li>欢迎你，<a href="user">{$_SESSION['username']}</a></li>
+            <li><a href="/Home/Index/logout">退出</a></li>
+            <else/><li><a href="{:U('index/login')}">登录</a></li>
+            </if>
+			
+            <li><a href="/">庐山特产网首页</a></li>
+            <li>
+                <a class="drop" href="user">我的特产</a>
+                <ul style="display:none; ">
+                    <li><a href="user">我的订单</a></li>
+                    <!--<li><a href="#">我的积分</a></li>-->
+                    <li><a href="/user/comment.aspx">评价商品</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/Home/Cart/index">购物车 <font id="cart_count"></font></a>
+                <script type="text/javascript">
+                    $(function () {
+                        $.ajax({
+                            type: "post",
+                            dataType: "json",
+                            url: "/Tools/submit_ajax.ashx?action=get_cart_count",
+                            success: function (d) {
+                                $("#cart_count").html(d.msg);
+                            }
+                        })
+                    })
+                </script>
+            </li>
+            <li><a class="tells">客服热线：<b>4008006868</b></a></li>
+            <li><a class="sina_weibo" title="关注庐山特产网微博" target="_blank" href="#">关注庐山特产网微博</a></li>
+            <li><a class="wxs" href="javascript:;" onmouseover="$('.sa').show()" onmouseout="$('.sa').hide()" style="position:relative;">微信<img class="sa" style="position:absolute; top:29px; left:-90px; z-index:120000; display:none;" src="__ROOT__/Public/images/Home/APP.png" width="120" height="120" /></a></li>
+        </ul>
+        <em id="login_str">
+        </em>
+        <script type="text/javascript">
+            $(function () {
+                $.ajax({
+                    type: "post",
+                    dataType: "json",
+                    url: "/Tools/submit_ajax.ashx?action=get_login_str",
+                    success: function (d) {
+                        $("#login_str").html(d.msg);
+                    }
+                })
+            })
+        </script>
+
+    </div>
+   
+    <div class="wrap clear">
+        <div class="logo left"><h1><a href="/"><img src="__ROOT__/Public/images/Home/hailin.png" width="200" height="70" title="" alt="" /></a></h1></div>
+        <!--搜索开始-->
+        <div class="search left">
+            <div class="search1">
+                <!--下拉框-->
+                <div class="selectwrap" onclick="sodis();" onmouseout="hideso();">
+                    <div id="selectvalue">商品</div>
+                    <input type="hidden" id="searchtype" name="searchtype" value="0" />
+                    <div id="options" style="display:none;overflow:hidden;" onmouseout="hideso();" onmouseover="showso();">
+                        <a href="javascript:void(0);" onclick="setselect('0','商品');">商品</a>
+                        
+                    </div>
+                </div>
+                
+                <div class="keyword" >
+                    <input type="text" name="searchword" value="{$Think.cookie.words}" id="searchword" onclick="if ($(this).val() == '请输入搜索信息') $(this).val('')" onblur="if ($(this).val() == '') $(this).val('请输入搜索信息')" onkeyup="input_tip(this)" placehoher="请输入搜索信息" />
+
+                </div>
+                <!--搜索按钮-->
+                <div class="search_btn"><button type="button" onclick="search()">搜索</button></div>
+
+            </div>
+            <!-- <p>
+                
+                <a href="/category.aspx?wd=苹果" target="_blank">苹果</a>
+                <a href="/category.aspx?wd=榴莲" target="_blank">榴莲</a>
+                <a href="/category.aspx?wd=脐橙" target="_blank">脐橙</a>
+                <a href="/category.aspx?wd=有机蔬菜" target="_blank">有机蔬菜</a>
+                <a href="/category.aspx?wd=牛肉" target="_blank">牛肉</a>
+                <a href="/category.aspx?wd=散养土鸡" target="_blank">散养土鸡</a>
+                <a href="/category.aspx?wd=三文鱼" target="_blank">三文鱼</a>
+                <a href="/category.aspx?wd=开心果" target="_blank">开心果</a>
+                <a href="/category.aspx?wd=葡萄干" target="_blank">葡萄干</a>
+                <a href="/category.aspx?wd=曲奇" target="_blank">曲奇</a>
+            </p> -->
+        </div>
+        <!--搜索结束-->
+        <!--微信开始-->
+<style>.htwx{ width:160px; text-align:right; padding-top:18px;}
+.htwx em{ float:right; display:inline-block; text-align:center; border:0px;}
+.htwx em img{ width:72px; height:72px; border:1px solid #ddd; display:block; margin-bottom:5px; padding:3px;}
+.htwx span{ color:#d52629; line-height:18px; padding-top:64px; display:inline-block; background:url(__ROOT__/Public/images/Home/icon.png) 30px -420px no-repeat; margin-right:12px;}
+   </style> 
+        <!--微信结束-->
+        <div class="clear0"></div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            var url = window.location.href;
+            if (url.indexOf("category") >= 0) {
+                setselect(0, "商品");
+            }
+            else if (url.indexOf("shop.aspx") >= 0) {
+                setselect(1, "店铺");
+            }
+            else if (url.indexOf("news") >= 0) {
+                setselect(2, "资讯");
+            }
+            else if (url.indexOf("item") >= 0) {
+                setselect(0, "商品");
+            }
+            else if (url.indexOf("company") >= 0) {
+                setselect(4, "黄页");
+            }
+            else {
+                setselect(0, "商品");
+            }
+        })
+
+        function setselect(sval, ihtml) {
+            document.getElementById("selectvalue").innerHTML = ihtml;
+            document.getElementById("searchtype").value = sval;
+        }
+        function sodis() {
+            if (document.getElementById("options").style.display == "none") {
+                document.getElementById("options").style.display = "block";
+            } else {
+                document.getElementById("options").style.display = "none";
+            }
+        }
+        function showso() { document.getElementById("options").style.display = "block"; }
+        function hideso() { document.getElementById("options").style.display = "none"; }
+
+        function search() {
+            var searchtype = document.getElementById("searchtype").value;
+            var word = document.getElementById("searchword").value;
+            word = (word == "请输入搜索信息") ? "" : word;
+            switch (searchtype) {
+                case "0":
+                    location.href = "/Home/category/index?wd=" + encodeURI(word);
+                    break;
+                case "1":
+                    location.href = "/shop.aspx?wd=" + encodeURI(word);
+                    break;
+                case "2":
+                    location.href = "/news.aspx?wd=" + encodeURI(word);
+                    break;
+                case "3":
+                    location.href = "/supply.aspx?wd=" + encodeURI(word);
+                    break;
+                case "4":
+                    location.href = "/company.aspx?wd=" + encodeURI(word);
+                    break;
+                default:
+                    location.href = "/category.aspx?wd=" + encodeURI(word);
+                    break;
+            }
+        }
+    </script>
+
+</div>
+<!--  头部导航-->
+<div class="nav clear">
+    <div class="navbg"></div>
+    <div class="wrap clear">
+        <div class="siderlf left">
+            <div class="nav clear">
+    <div class="navbg"></div>
+    <div class="wrap clear">
+        <div class="siderlf left" id="hid_category">
+            <h2><a href="/category.aspx">全部商品分类</a></h2>
+            <div class="sort" style=" display:none">
+                <div id="newPriceLinks" class="newPriceLinks">
+                    <ul>
+                        <foreach name='categories' item="category">
+                        <li><!-- 一级分类 -->
+                            <p class="tit"><strong><i class="i{$key+1}" ></i><a>{$category['name']}</a></strong>
+                            <font>
+                            	<php>$cate_word = $cate_words[$key];</php>
+                                <foreach name='cate_word' item='word'><!--分类预览  -->
+                                <a>{$word.name}</a>
+                                </foreach>
+                             </font>
+                            </p>
+                            <p class="arrow" style=" top:1px;"></p>
+                            <div style="background: url(Public/images/Home/pic{$key+1}.jpg) #fff right bottom no-repeat; ">
+                                <span>
+                                    <foreach name="category['child']" item='cate'>
+                                    <dl><!-- 二级分类（水果，蔬菜等） -->
+                                        <dt> <a>{$cate['name']}</a> </dt>
+                                 <!--   <dt> <a href="{:U('Home/Category/index',array('cid'=>$cate['id']))}">{$cate['name']}</a> </dt> -->
+                                        <dd>
+                                        <foreach name="cate['child']" item="cate_son"><!--分类详情  -->
+                                            <em><a href="{:U('Home/Category/index',array('cid'=>$cate_son['id']))}">{$cate_son['name']}</a></em>
+                                         </foreach> 
+                                        </dd>
+                                    </dl>
+                                    </foreach>
+                                </span>
+                            </div>
+                        </li>
+              			</foreach>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--<div class="navl left">
+            <ul>
+                <li><a href="index.html" class="on">首页</a></li>
+                <li><a href="http://www.lushantc.com/tongcheng.aspx">土购生鲜</a></li>
+                <li><a href="#">母婴专场</a></li>
+                <li><a href="#">微信拼团<img class="imgs" src="Public/images/Home/hot.png" /></a></li>
+                <li><a href="http://www.lushantc.com/procure.aspx">企业直采</a></li>
+                <li><a class="shop" href="#">商家入驻</a></li>
+            </ul>
+        </div>-->
+    </div>
+</div>
+<script>
+	$('#hid_category').hover(function () {
+	    $('.sort').find("li").removeClass("sfhover");
+	    $('.sort').find("li").children("div").hide();
+	    $(this).find(".sort").show();
+	}, function () {
+	    $(this).find(".sort").hide();
+	});
+    //二级导航事件
+    $(".newPriceLinks li p").hover(
+	function () {
+	    $(this).parent("li").children("div").show();
+	    $(this).parent("li").addClass("sfhover");
+	},
+	function () {
+	    $(this).parent("li").children("div").hide();
+	    $(this).parent("li").removeClass("sfhover"); //alert('ok');
+	}
+	);
+</script>
+
+
+        </div>
+        <div class="navl left">
+            <ul>
+                <li><a href="/" class="on">首页</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--头部结束-->

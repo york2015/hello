@@ -1,0 +1,139 @@
+<include file="Public/header" />
+<!--主体开始-->
+<form id="form1" name="form1">
+<div class="center clear">
+ <include file="Public/left"/>
+  <div class="cenrt right">
+    <div class="OrderStatus clear">
+      <ul>
+        <li <eq name='statusid' value='0'>class="lion"</eq>><a href="/user">所有订单<span></span></a></li>
+        <li <eq name='statusid' value='1'>class="lion"</eq>><a href="/user?statusid=1">待付款<em>{$count.pay}</em><span></span></a></li>
+        <li <eq name='statusid' value='3'>class="lion"</eq>><a href="/user?statusid=3">待发货<em>{$count.fahuo}</em><span></span></a></li>
+        <li <eq name='statusid' value='4'>class="lion"</eq>><a href="/user?statusid=4">待收货<em>{$count.receive}</em><span></span></a></li>
+        <!-- <li ><a href="order.aspx?evatatus=0">待评价<em>0</em><span></span></a></li> -->
+        <!-- <li class="last"><a href="order_recycle.aspx">订单回收站</a></li> -->
+      </ul>
+    </div>
+    
+    <table width="100%" class="orderlist" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr class="colname1">
+          <th class="leftb">商品</th>
+          <th width="90">单价(元)</th>
+          <th width="45">数量</th>
+          <th width="108">商品操作</th>
+          <th width="108">实付款(元)</th>
+          <th width="88">
+            <select onchange="javascript:location.href=this.options[this.selectedIndex].value">
+              <option value="/user">订单状态</option>
+              <option value="/user?statusid=1" >待买家付款</option>
+              <option value="/user?statusid=3" >待卖家发货</option>
+              <option value="/user?statusid=4" >待确认收货</option>
+              <!-- <option value="order.aspx?evatatus=0" >待评价</option> -->
+            </select>
+          </th>
+          <th class="rightb" width="108">交易操作</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr class="sep_row"><td colspan="7"></td></tr>
+        <tr>
+          <td colspan="7">
+            <div class="ordtop ordtopc">
+              <label class="left"><input class="mart inpt" type="checkbox" onclick="checkAll(this)"/>全选</label>
+            <!--   <p><a href="javascript:" onclick="ajax_submit('order','order_Merge_batch','form1')">订单合并付款</a></p> -->
+              <p><a href="javascript:" onclick="ajax_submit('order','order_confirm_batch','form1')">批量确认收货</a></p>
+              <div class="ordtop_page">
+                <span class="span1">1/1</span><a class="prev disabled">上一页</a><a class="next disabled">下一页</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      
+      <foreach name='dingdan' item='dd'>
+      <tbody>
+        <tr class="sep_row"><td colspan="7"></td></tr><!-- 遍历订单 -->
+        <tr class="first">
+          <td colspan="7">
+            <em></em>
+            <span><input class="inpt checkall" name="chkNumber[]" value="{$dd.sn}" type="checkbox"  /></span>
+            <span class="dealtime">{:date('Y-m-d H:i:s',$dd['create_time'])}</span>
+            <span>订单号：{$dd.sn}</span>
+            
+          </td>
+        </tr>
+        
+        <tr class="order_pd" >
+          <td class="border0" colspan="4">
+            <foreach name="chanpin[$dd['sn']]" item='cp'><!-- 遍历每个订单中的产品 -->
+            
+            <table width="100%" class="order_pd_tbl" cellpadding="0" cellspacing="0">
+
+                 <tr>
+                <td class="goods">
+                  <a href="/product-9750.aspx" target="_blank" class="pic"><img src="__ROOT__{$cp.thumb}"></a>
+                  <div class="goods_desc"><a href="/product-9750.aspx" target="_blank">{$cp.p_name}-</a></div>
+                </td>
+                <td width="90" class="price">{$cp.price}</td>
+                <td width="45">{$cp.num}</td>
+                <td width="108"></td>
+              </tr>
+            
+            </table>
+            </foreach>
+            
+          </td>
+          <td class="border1 real_price">{$dd.total}</td>
+          <td class="border1">
+          <if condition = "$dd['status'] eq 1" >
+          <a href="javascript::void(0)" target="_blank">待付款</a>
+          </if>
+          <if condition = "$dd['status'] eq 3" >
+          <a href="javascript::void(0)" target="_blank">待发货</a>
+          </if>
+          <if condition = "$dd['status'] eq 4" >
+          <a href="javascript::void(0)" target="_blank">待收货</a>
+          </if>
+          <if condition = "$dd['status'] eq 2" >
+          <a href="javascript::void(0)" target="_blank">付款失败</a>
+          </if>
+           <if condition = "$dd['status'] eq 6" >
+          <a href="javascript::void(0)" target="_blank">订单取消</a>
+          </if>
+           <if condition = "$dd['status'] eq 5" >
+          <a href="javascript::void(0)" target="_blank">已收货</a>
+          </if>
+          <a href="/user/index/order_detail?number={$dd.sn}" target="_blank">订单详情</a></td>
+          <td class="border2 borderbut">
+          <if condition = "$dd['status'] lt 2" >
+          <a class="a1" href="/order_shop_payment.aspx?id={$dd.sn}" target="_blank">立即付款</a><a href="javascript:;" onclick="ajax_post('order','order_cancel','{$dd.sn}')">取消订单</a>
+          <else/>
+          		<span style="color:blue">订单进行中</span>
+          </if>
+          
+          </td>
+        </tr>
+      </tbody>
+      </foreach>
+      
+    </table>
+    
+    <div class="ordtop ordtopc" style=" height:30px;">
+      <label class="left"><input class="mart inpt" type="checkbox" onclick="checkAll(this)"/>全选</label>
+      <p><a href="javascript:" onclick="ajax_submit('order','order_confirm_batch','form1')">批量确认收货</a></p><span>共{$count.zong}记录</span> 
+      <div class="page right">
+	       
+	      {$page}
+      </div>
+    </div>
+    
+  </div>
+  <div class="clear0"></div>
+</div>
+</form>
+<!--主体结束-->
+
+<!--底部开始-->
+<include file="Public/footer"/>

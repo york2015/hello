@@ -1,0 +1,47 @@
+[ 2017-06-20T16:17:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0510s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0130s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product` WHERE `stick` = 1 LIMIT 4   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `index_product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 1 AND `floor` = 1 LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `index_product` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 1 AND `floor` = 2 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 2 AND `floor` = 1 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 2 AND `floor` = 2 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 1 LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 2 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 3 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 1 LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 2 LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 3 LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 4 LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 2 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 3 LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 4 LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.172010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.173010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

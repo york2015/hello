@@ -1,0 +1,232 @@
+<include file="Public/header" />
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/css/Home/cart.css"/>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/Validform_v5.3.2_min.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/lhgdialog/lhgdialog.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/js/Home/order.js"></script>
+<!--购物车开始-->
+<div class="ShopCart">
+  
+  <div class="addlist">
+    <h2><a href="/user/address.aspx" target="_blank">管理收货地址</a>确认收货地址</h2>
+    <ul>
+      <foreach name='ep' item='exp'>
+      <li class="selecton" id="24904">
+        <strong style="display:inline-block">送至</strong>
+        <input type="radio" name="chkAddress" value="{$exp.id}" <eq name="exp.default" value="1"> checked="checked"</eq>/>
+        									  
+        <label>{$exp.province} {$exp.city} {$exp.region}{$exp.area}({$exp.deliver} 收) <em class="marrt">{$exp.mobile}</em></label>
+        <if condition="($exp.default eq 1 )">
+        <a class="marrt " href="javascript:" id="24904">默认收货地址</a>
+      	</if>
+      </li>
+      </foreach>
+    </ul>
+    <div><a href="javascript:;" class="fb2">使用新地址</a></div>
+    <div class="addad hidden">
+        <script type="text/javascript">
+            $(function () {
+                $("#form1").initValidform();
+                $("#selProvince").change(function () {
+                    var province_id = $(this).val();
+                    get_city(province_id);
+                })
+                $("#selCity").change(function () {
+                    var city_id = $(this).val();
+                    get_country(city_id);
+                })
+                $("#selCountry").change(function () {
+                    var country_id = $(this).val();
+                    get_town(country_id);
+                })
+                
+                
+                $("input[name='chkAddress']").click(function(){
+					var address_id = $(this).val();
+					$("input[name='address_id']").val(address_id);
+                })
+            })
+		
+            function get_city(province_id){
+                $.ajax({
+                    type: "post",
+                    url: "/Home/Areas/getCity?province_id=" + province_id,
+                    dataType: "json",
+                    success: function (d) {
+                        $("#selCity").empty();
+                        $("#selCity").append(d.msg);
+                    }
+                })
+            }
+			
+            function get_country(city_id) {
+                $.ajax({
+                    type: "post",
+                    url: "/Home/Areas/getArea?city_id=" + city_id,
+                    dataType: "json",
+                    success: function (d) {
+                        $("#selCountry").empty();
+                        $("#selCountry").append(d.msg);
+                    }
+                })
+            }
+
+           /*  function get_town(country_id) {
+                $.ajax({
+                    type: "post",
+                    url: "/Home/Areas/getArea?country_id=" + country_id,
+                    dataType: "json",
+                    success: function (d) {
+                        $("#selTown").empty();
+                        $("#selTown").append(d.msg);
+                    }
+                })
+            } */
+
+       </script>
+      <form id="form1" name="form1" method="post" action="/Home/Order/get_addr">
+      <input id="action" name="action" type="hidden" value="edit_address" />
+      <table width="100%" border="0" cellpadding="0" cellspacing="1" id="addad_table">
+       <tr>
+         <th width="90"><span class="red">*</span>收货人姓名：</th>
+         <td><input id="txtName" name="txtName" type="text" value="" maxlength="64" datatype="s2-50" sucmsg=" "/></td>
+       </tr>
+       <tr>
+         <th><span class="red">*</span>所在地区：</th>
+         <td>
+             省：<select id="selProvince" name="selProvince">
+                 <option value="">-请选择-</option>
+                 <foreach name='p' item='pro'>
+                 <option value="{$pro.provinceid}">{$pro.province}</option>
+                 </foreach>
+               	 </select>
+             市：<select id="selCity" name="selCity">
+           	 <option value="">-请选择-</option>
+            </select>
+             区：<select id="selCountry" name="selCountry" datatype="*" sucmsg=" ">
+             <option value="">-请选择-</option>
+             </select>
+            <!--  镇：<select id="selTown" name="selTown" datatype="*" sucmsg=" =">
+             <option value="">-请选择-</option>
+             </select> -->
+         </td>
+       </tr>
+       <tr>
+         <th><span class="red">*</span>街道地址：</th>
+         <td><textarea id="txtAddress" name="txtAddress" cols="70" rows="2" datatype="*" sucmsg=" "></textarea></td>
+       </tr>
+       <tr>
+         <th><span class="red">*</span>邮政编码：</th>
+         <td><input id="txtPostCode" name="txtPostCode" type="text" value="" maxlength="10" datatype="p" sucmsg=" " ignore="ignore"/></td>
+       </tr>
+       <tr>
+         <th>电话号码：</th>
+         <td><input id="txtTel" name="txtTel" type="text" maxlength="30" value=""/></td>
+       </tr>
+       <tr>
+         <th>手机号码：</th>
+         <td><input id="txtMobile" name="txtMobile" type="text" value="" maxlength="15" datatype="m" ignore="ignore"/><span>电话和手机至少填写一项</span></td>
+       </tr>
+       <tr>
+         <th>设置默认：</th>
+         <td><input id="chkIsDefult" name="chkIsDefult" type="checkbox" value="1"/> 设置为默认地址</td>
+       </tr>
+       <tr><td colspan="2"><div class="submitd" style=" padding-left:130px"><input id="btnSubmit" type="submit" class="submit" hidefocus="true" value="确认提交"/></div></td></tr>
+     </table>
+      </form>
+     </div>
+  </div>
+  <div class="orderssubmit clear">
+     <form id="form2" name="form2" method="post" action="add_order">
+    <input id="Hidden1" name="action" type="hidden" value="order_submit" />
+    <input id="hid_address_id" name="address_id" type="hidden" value="{$b|default=0}" />
+    <h2>确认订单信息</h2>
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+      <thead>
+        <tr>
+          <th width="350">商品信息</th>
+          <th width="150">单价(元)</th>
+          <th width="120">数量</th>
+          <th width="165">小计(元)</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <!-- <tr>
+          <td colspan="5" class="trname">
+            <div class="cartls1t">
+              <em>店铺：<a href="/shop164/index.aspx" target="_blank">福建小李水果行</a> </em>
+            </div>
+          </td>
+        </tr> -->
+        <foreach name='jiesuan' item='j'>
+        <tr>
+          <td>
+            <dl>
+              <dt><a href="#" target="_blank"><img src="{$j['thumb']}" width="72" height="72" /></a></dt>
+              <dd><a href="#" target="_blank">{$j['p_name']}</a></dd>
+            </dl>
+          </td>
+          <td>{$j['price']}</td>
+          <td>{$j['num']}</td>
+          <td><strong>{$j['price']*$j['num']}</strong></td>        
+        </tr>
+        </foreach>
+         
+          
+        <tr class="trzfn">
+          <td style="text-align:left;padding-top:20px;">补充说明：<textarea name="remark_164" style="width:350px; border: 1px solid #8AB6DD;"></textarea></td>
+          <td style="text-align:right;" colspan="3">
+            
+            <p><em>配送方式：</em><select name="fee_164" onchange="change_fee(this,164)"><option value="0.00" DeliveryName="快递">快递 0.00元</option></select></p>
+          </td>        
+        </tr>
+      </tbody>
+      
+      <tfoot>
+         
+         <tr  style="display:none">
+          <td colspan="5">
+              
+              <div class="voucherstop1"><a href="javascript:" onclick="promotion_toggle(this)"><i class="i1"></i><!--i1为加号 i2为减号-->使用购物卡</a></div>
+              <div class="clear" style="display:none">
+                
+                <div class="voucherstop">
+                  <ul>
+                    <li> <a class="active" id="two1" href="javascript:void(0)" onclick="setTab('two',1,1)">可用购物卡<b>(0)</b></a></li>
+                  </ul>
+                </div>
+                <div id="con_two_1" class="voucherbot clear">
+                  <p class="p1">以下是此订单可用的购物卡。</p>
+                  <ul>
+                    
+                  </ul>
+                  <input type="hidden" id="hid_card_id" value="0" name="hid_card_id" />
+                  <input type="hidden" id="hid_card_money" value="0" name="hid_card_money"/>
+                  <p class="p2">共使用了<font id="card_count">0</font>张购物卡　可以优惠<font id="card_total_money">0</font>元</p>
+                </div>
+              </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td colspan="5" style="text-align:right; padding-bottom:40px;">
+            
+            <div class="paytotalsubmit">
+              <p>商品总金额：<span>¥{$tpt}</span><span id="total_product_price"></span><input type="hidden" name="total_product_price" value="{$tpt}"/></p>
+              <!-- <p>优惠券优惠：<span>- ¥</span><span id="total_vocher_price">0.00</span></p>
+              <p>购物卡优惠：<span>- ¥</span><span id="total_card_price">0.00</span></p> -->
+              <p><font color="#005EA7">运  费：</font> <span>¥</span><span class="red" id="total_fee">0.00</span></p>
+              <p>实付款： <span>¥</span><span id="total_price">{$tpt}</span></p>
+              
+            </div>
+            <div class="paybuts"><input id="Submit1" type="submit" value="提交订单" class="cartbut right" style="border:none" /><em><a href="/Home/order">返回购物车</a></em></div>
+            <p>若价格变动，请在提交订单后联系卖家改价，并查看已买到的宝贝</p>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    </form>
+  </div>
+</div>
+<!--购物车结束-->
+<include file="Public/footer" />

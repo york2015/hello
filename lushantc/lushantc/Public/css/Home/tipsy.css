@@ -1,0 +1,19 @@
+.tipsy { padding: 5px; font-size: 10px; position: absolute; z-index: 100000; line-height:18px;}
+  .tipsy-inner { padding: 5px 8px 4px 8px; background: #ffffe6; color: #404040; max-width: 200px; text-align: left; }
+  .tipsy-inner {border:1px solid #ffcc7f; border-radius: 3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+  .tipsy-arrow { position: absolute; background: url('tipsy.gif') no-repeat top left; width: 9px; height: 5px; }
+  .tipsy-n .tipsy-arrow { top: 1px; left: 50%; margin-left: -4px; }
+    .tipsy-nw .tipsy-arrow { top: 1px; left: 10px; }
+    .tipsy-ne .tipsy-arrow { top: 1px; right: 10px; }
+  .tipsy-s .tipsy-arrow { bottom: 1px; left: 50%; margin-left: -4px; background-position: bottom left; }
+    .tipsy-sw .tipsy-arrow { bottom: 1px; left: 10px; background-position: bottom left; }
+    .tipsy-se .tipsy-arrow { bottom: 1px; right: 10px; background-position: bottom left; }
+  .tipsy-e .tipsy-arrow { top: 50%; margin-top: -4px; right: 1px; width: 5px; height: 9px; background-position: top right; }
+  .tipsy-w .tipsy-arrow { top: 50%; margin-top: -4px; left: 1px; width: 5px; height: 9px; }
+
+
+  .t_indent{text-indent:-999px;}
+  .tip_attention {display: inline-block;height: 12px;vertical-align: middle;width: 12px;background: url(../../images/Home/msg_bg.png) 0 -203px no-repeat;overflow: hidden;font-size: 0;line-height: 30px;}
+  .tip_attention:hover{background-position:0 -189px;} 
+  .tip_help {display: inline-block;height: 12px;vertical-align: middle;width: 12px;background: url(../../images/Home/msg_bg.png) 0 -217px no-repeat;overflow: hidden;font-size: 0;line-height: 30px;}
+  .tip_help:hover{background-position:0 -160px;}

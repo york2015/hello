@@ -1,0 +1,135 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<include file="Public/header"/>
+<!--主体开始-->
+
+
+ <script type="text/javascript">
+            $(function () {
+                $("#ddlProvinceID").change(function () {
+                    var province_id = $(this).val();
+                    get_city(province_id);
+                })
+                $("#ddlCityID").change(function () {
+                    var city_id = $(this).val();
+                    get_country(city_id);
+                })
+               
+                
+                
+                $("input[name='chkAddress']").click(function(){
+					var address_id = $(this).val();
+					$("input[name='address_id']").val(address_id);
+                })
+            })
+		
+            function get_city(province_id){
+                $.ajax({
+                    type: "post",
+                    url: "/Home/Areas/getCity?province_id=" + province_id,
+                    dataType: "json",
+                    success: function (d) {
+                        $("#ddlCityID").empty();
+                        $("#ddlCityID").append(d.msg);
+                    }
+                })
+            }
+			
+            function get_country(city_id) {
+                $.ajax({
+                    type: "post",
+                    url: "/Home/Areas/getArea?city_id=" + city_id,
+                    dataType: "json",
+                    success: function (d) {
+                        $("#ddlCountryID").empty();
+                        $("#ddlCountryID").append(d.msg);
+                    }
+                })
+            }
+
+           
+
+       </script>
+<form id="form1" name="form1" action="/user/index/address_edit" method='post'>
+<div class="center clear">
+  <div class="sider left">
+   <php>$check = time();$_SESSION['check_id'] = $check ;</php>
+  <input type="hidden" name='check_id' value='{$check}'/> 
+  <input type="hidden" name='id' value='{$pid}'/>
+<include file="Public/left"/>
+  </div>
+  <div class="cenrt right">
+    <div class="list_tab">
+      <ul>
+        <li><a href="/user/index/address">我的收货地址（2）</a></li>
+        <li class="lions">添加收货地址</li>
+      </ul>
+    </div>
+    <div class="iplist clear">
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th><font class="red">*</font>所在地区：</th>
+          <td>
+              <select id="ddlProvinceID" name="ddlProvinceID" class="ipbgc selbg">
+              <option value="-1">--请选择--</option>
+              <foreach name="sheng" item='po'>
+              
+              <option <eq name="po['provinceid']" value="$xg.province"> selected='selected'</eq> value="{$po.provinceid}" >{$po.province}</option>
+              </foreach>
+              </select>
+              
+              <select id="ddlCityID" name="ddlCityID" class="ipbgc selbg">
+              <option value="-1">--请选择--</option>
+               <foreach name="shi" item='chengshi'>
+              <option <eq name="chengshi['cityid']" value="$xg.city"> selected='selected'</eq> value="{$chengshi.cityid}" >{$chengshi.city}</option>
+              </foreach>
+              </select>
+              
+              <select id="ddlCountryID" name="ddlCountryID" class="ipbgc selbg" datatype="*" sucmsg=" ">
+              <option value="-1">--请选择--</option>
+              <foreach name="qu" item='town'>
+              <option <eq name="town['areaid']" value="$xg.region"> selected='selected'</eq> value="{$town.areaid}" >{$town.area}</option>
+              </foreach>
+              </select>
+              
+              </select>
+              
+          </td>
+        </tr>
+        <tr>
+          <th><font class="red">*</font>详细地址：</th>
+          <td><textarea class="ipbgc ipbg textarea" id="txtShortAddress" name="txtShortAddress" datatype="*" sucmsg=" " placeholder="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息">{$xg.area}</textarea></td>
+        </tr>
+        <tr>
+          <th><font class="red">*</font>邮政编码：</th>
+          <td><input class="ipbgc ipbg" type="text" id="txtPostCode" name="txtPostCode" datatype="*" sucmsg=" " value="{$xg.postcode}" placeholder="如不清楚邮递区号，请填写000000"/></td>
+        </tr>
+        <tr>
+          <th><font class="red">*</font>收货人姓名：</th>
+          <td><input class="ipbgc ipbg" type="text" id="txtName" name="txtName" datatype="s2-25" sucmsg=" " value="{$xg.deliver}" placeholder="长度不超过25个字符"/></td>
+        </tr>
+        <tr>
+          <th><font class="red">*</font>手机号码：</th>
+          <td><input class="ipbgc ipbg" type="text" id="txtMoblie" name="txtMoblie" datatype="m" sucmsg=" " ignore="ignore" value="{$xg.mobile}" placeholder="电话号码、手机号码必须填一项"/></td>
+        </tr>
+        <tr>
+          <th><font class="red">*</font>电话号码：</th>
+          <td><input class="ipbgc ipbg" type="text" id="txtTel" name="txtTel" value="{$xg.tel}" datatype="*0-25" sucmsg=" " placeholder="区号+电话号码(如:0797-0000000)"/></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td><input id="rblIsDefault" name="rblIsDefault" value="1" type="checkbox"  /><label for="rblIsDefault">设置为默认收货地址</label></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td><input class="ipbutc ipbut1" type="submit" id="btnSubmit" value="保存" /></td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+  <div class="clear0"></div>
+</div>
+</form>
+<!--主体结束-->
+
+<include file="Public/footer"/>

@@ -1,0 +1,113 @@
+<include file="Public/header"/>
+<!--主体开始-->
+<form id="form1" name="form1">
+<div class="center clear">
+  <include file="Public/left"/>
+  <div class="cenrt right">
+    <div class="list_tab">
+      <ul>
+        <li><a href="/user">已买到的商品</a></li>
+        <li class="lions">订单详情</li>
+      </ul>
+    </div>
+    <div class="order_flow" style="width:696px;">       
+        <if condition="$od['status']==6">  
+      <div style="text-align:center;line-height:50px; font-size:20px; color:Red;">该订单已关闭交易</div>
+      </if>
+      <div class="clear0"></div>
+    </div>
+    <div class="orderdt clear">
+      <h2>订单信息</h2>
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th>订单状态：</th>
+              <switch name="od['status']" >
+    			<case value="1"><td>待付款</td></case>
+    			<case value="2"><td>付款失败</td></case>
+    			<case value="3"><td>待发货</td></case>
+    			<case value="4"><td>待收货</td></case>
+    			<case value="5"><td>已收货</td></case>
+    			<case value="6"><td>订单取消</td></case>
+    			<default />默认情况
+    		</switch>
+          <th>付款方式：</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>订单编号：</th>
+          <td>{$od['sn']}</td>
+          <th>交易流水号：</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>应支付金额：</th>
+          <td>¥{$od['total']}</td>
+          <th>创建时间：</th>
+          <td>{:date('Y-m-d H:i:s',$od['create_time'])}</td>
+        </tr>
+        <tr>
+          
+          <th>付款时间：</th>
+          <td></td>
+        </tr>
+        <tr>
+          <th>物流信息：</th>
+          <td colspan="3">还没有任何物流信息</td>
+        </tr>
+      </table>
+    </div>
+    <div class="orderdt1 clear">
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th colspan="2" width="50%"><span>商品信息</span></th>
+          <th>单价(元)</th>
+          <th>数量</th>
+          <th>商品总价(元)</th>
+        </tr>
+        <foreach name='odp' item='ods'>
+        <tr>
+          <td width="60"><a href="/product-9663.aspx" target="_blank"><img src="{$ods.thumb}" width="60" height="60" /></a></td>
+          <td style="text-align:left;"><a href="/product-9663.aspx" target="_blank">{$ods.p_name}</a></td>
+            
+          <td><b>{$ods.price}</b></td>
+          <td>{$ods.num}</td>
+          <td>{$ods['price']*$ods["num"]}</td>
+            
+        </tr>
+        </foreach>
+        </table>
+      <div class="total">
+        <ul>
+          <li><span>总商品金额：</span>{$od.total}</li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="orderdt clear">
+      <h2>收货信息</h2>
+      <table width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th>顾客姓名：</th>
+          <td>卢志明</td>
+        </tr>
+        <tr>
+          <th>收货地址：</th>
+          <td>{$sheng.province}{$shi.city}{$qu.area}{$uad.area}{$uad.postcode}</td>
+        </tr>
+        <tr>
+          <th>联系电话：</th>
+          <td>{$uad.mobile} {$uad.tel}</td>
+        </tr>
+        <tr>
+          <th>买家留言：</th>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="clear0"></div>
+</div>
+</form>
+<!--主体结束-->
+
+<include file="Public/footer"/>

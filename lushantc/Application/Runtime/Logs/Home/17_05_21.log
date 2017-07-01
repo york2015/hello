@@ -1,0 +1,240 @@
+[ 2017-05-21T22:37:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `product` WHERE `stick` = 1 LIMIT 4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `index_product` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 1 AND `floor` = 1 LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `index_product` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 1 AND `floor` = 2 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 2 AND `floor` = 1 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 2 AND `floor` = 2 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 1 LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 2 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 3 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 1 LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 2 LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 3 LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 4 LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 2 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 3 LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 4 LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-21T23:01:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `product` WHERE `stick` = 1 LIMIT 4   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `index_product` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 1 AND `floor` = 1 LIMIT 4   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `index_product` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 1 AND `floor` = 2 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 2 AND `floor` = 1 LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 2 AND `floor` = 2 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 1 LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 2 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 3 AND `floor` = 3 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 1 LIMIT 2   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 2 LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 3 LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 4 AND `floor` = 4 LIMIT 2   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 2 LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 3 LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `index_product` WHERE `cate_id` = 5 AND `floor` = 4 LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.146009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.147009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-21T23:01:05+08:00 ] 127.0.0.1 /home/item?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `product` WHERE `p_id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product_scroll` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `product_scroll` WHERE `pid` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `attrbute` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `attrbute` WHERE `p_id` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\Runtime\Cache\Home\fbd4024b257c0eb32531d23fc561bc4e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.091005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-21T23:01:08+08:00 ] 127.0.0.1 /Home/Cart/add?id=3&count=1&combo=undefined&skuid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+
+[ 2017-05-21T23:01:08+08:00 ] 127.0.0.1 /home/undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+ERR: 无法加载控制器:Undefined
+
+[ 2017-05-21T23:01:13+08:00 ] 127.0.0.1 /Home/Order/order_submit?id=3&count=1&type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+
+[ 2017-05-21T23:01:13+08:00 ] 127.0.0.1 /Home/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-21T23:06:57+08:00 ] 127.0.0.1 /home/item?id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\lushantc\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 2 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 4 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\lushantc\Application\Common\Common\function.php 第 11 行.
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `product` WHERE `p_id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_scroll` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `product_scroll` WHERE `pid` = 3  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `attrbute` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `attrbute` WHERE `p_id` = 3  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `category` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `category` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_id D:\wamp\www\lushantc\Application\Runtime\Cache\Home\fbd4024b257c0eb32531d23fc561bc4e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.107006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.107006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
